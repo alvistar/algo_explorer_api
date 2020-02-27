@@ -8,11 +8,11 @@ abstract class TransactionPay
     implements Built<TransactionPay, TransactionPayBuilder> {
   @nullable
   @BuiltValueField(wireName: r'type')
-  JsonObject get type;
+  String get type;
 
   @nullable
   @BuiltValueField(wireName: r'index')
-  JsonObject get index;
+  int get index;
 
   @nullable
   @BuiltValueField(wireName: r'round')

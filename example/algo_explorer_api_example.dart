@@ -38,7 +38,14 @@ void main() async {
 //  print(result);
 
   result = await accountApi.accountsGetLatestAssetEventByIndex(
-      address: address2, assetID: 177241, count: 2);
+      address: address2, assetID: -1, count: 2);
 
-  print(result);
+  final entry1 = result.data[1];
+
+  result = await accountApi.accountsGetLatestAssetEventByIndex(
+      address: address2, assetID: -1, count: 2);
+
+  final entry2 = result.data[1];
+
+  print (entry1 == entry2);
 }

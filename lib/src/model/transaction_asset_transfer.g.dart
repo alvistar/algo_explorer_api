@@ -28,13 +28,13 @@ class _$TransactionAssetTransferSerializer
       result
         ..add('type')
         ..add(serializers.serialize(object.type,
-            specifiedType: const FullType(JsonObject)));
+            specifiedType: const FullType(String)));
     }
     if (object.index != null) {
       result
         ..add('index')
         ..add(serializers.serialize(object.index,
-            specifiedType: const FullType(JsonObject)));
+            specifiedType: const FullType(int)));
     }
     if (object.round != null) {
       result
@@ -233,11 +233,11 @@ class _$TransactionAssetTransferSerializer
       switch (key) {
         case 'type':
           result.type = serializers.deserialize(value,
-              specifiedType: const FullType(JsonObject)) as JsonObject;
+              specifiedType: const FullType(String)) as String;
           break;
         case 'index':
           result.index = serializers.deserialize(value,
-              specifiedType: const FullType(JsonObject)) as JsonObject;
+              specifiedType: const FullType(int)) as int;
           break;
         case 'round':
           result.round = serializers.deserialize(value,
@@ -368,9 +368,9 @@ class _$TransactionAssetTransferSerializer
 
 class _$TransactionAssetTransfer extends TransactionAssetTransfer {
   @override
-  final JsonObject type;
+  final String type;
   @override
-  final JsonObject index;
+  final int index;
   @override
   final int round;
   @override
@@ -604,13 +604,13 @@ class TransactionAssetTransferBuilder
         Builder<TransactionAssetTransfer, TransactionAssetTransferBuilder> {
   _$TransactionAssetTransfer _$v;
 
-  JsonObject _type;
-  JsonObject get type => _$this._type;
-  set type(JsonObject type) => _$this._type = type;
+  String _type;
+  String get type => _$this._type;
+  set type(String type) => _$this._type = type;
 
-  JsonObject _index;
-  JsonObject get index => _$this._index;
-  set index(JsonObject index) => _$this._index = index;
+  int _index;
+  int get index => _$this._index;
+  set index(int index) => _$this._index = index;
 
   int _round;
   int get round => _$this._round;

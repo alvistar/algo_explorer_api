@@ -105,4 +105,53 @@ class AccountApi {
       extra: response.extra,
     );
   }
+
+  /// Returns the asset transactions of an account.
+  ///
+  /// Returns the transactions that involve a particular asset between the specified indexes of the specified account. To query only Algo transactions (e.g. Key registration, payment, genesis allocation) pass &#x60;-1&#x60; as &#x60;assetID&#x60;.
+  Future<Response<List>> accountsGetAssetEventByIndex({
+    String address,
+    int assetID,
+    int from,
+    int to,
+    CancelToken cancelToken,
+    Map<String, String> headers,
+  }) async {
+    final _path =
+        '/account/$address/asset/$assetID/transactions/from/$from/to/$to';
+
+    Map<String, dynamic> queryParams = {};
+    Map<String, String> headerParams = Map.from(headers ?? {});
+    dynamic bodyData;
+
+    queryParams.removeWhere((key, value) => value == null);
+    headerParams.removeWhere((key, value) => value == null);
+
+    List<String> contentTypes = [];
+
+    final response = await _dio.request(
+      _path,
+      queryParameters: queryParams,
+      data: bodyData,
+      options: Options(
+        method: 'get'.toUpperCase(),
+        headers: headerParams,
+        contentType:
+            contentTypes.isNotEmpty ? contentTypes[0] : 'application/json',
+      ),
+      cancelToken: cancelToken,
+    );
+
+    final dataList = deserializeListByType(response.data);
+
+    return Response(
+      data: dataList,
+      headers: response.headers,
+      request: response.request,
+      redirects: response.redirects,
+      statusCode: response.statusCode,
+      statusMessage: response.statusMessage,
+      extra: response.extra,
+    );
+  }
 }
