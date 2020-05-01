@@ -20,6 +20,78 @@ class _$TransactionPaySerializer
   Iterable<Object> serialize(Serializers serializers, TransactionPay object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object>[];
+    if (object.to != null) {
+      result
+        ..add('to')
+        ..add(serializers.serialize(object.to,
+            specifiedType: const FullType(String)));
+    }
+    if (object.toIndex != null) {
+      result
+        ..add('toIndex')
+        ..add(serializers.serialize(object.toIndex,
+            specifiedType: const FullType(int)));
+    }
+    if (object.amount != null) {
+      result
+        ..add('amount')
+        ..add(serializers.serialize(object.amount,
+            specifiedType: const FullType(int)));
+    }
+    if (object.toRewards != null) {
+      result
+        ..add('toRewards')
+        ..add(serializers.serialize(object.toRewards,
+            specifiedType: const FullType(int)));
+    }
+    if (object.toBalance != null) {
+      result
+        ..add('toBalance')
+        ..add(serializers.serialize(object.toBalance,
+            specifiedType: const FullType(int)));
+    }
+    if (object.accumulatedToRewards != null) {
+      result
+        ..add('accumulatedToRewards')
+        ..add(serializers.serialize(object.accumulatedToRewards,
+            specifiedType: const FullType(int)));
+    }
+    if (object.close != null) {
+      result
+        ..add('close')
+        ..add(serializers.serialize(object.close,
+            specifiedType: const FullType(String)));
+    }
+    if (object.closeRewards != null) {
+      result
+        ..add('closeRewards')
+        ..add(serializers.serialize(object.closeRewards,
+            specifiedType: const FullType(int)));
+    }
+    if (object.closeAmount != null) {
+      result
+        ..add('closeAmount')
+        ..add(serializers.serialize(object.closeAmount,
+            specifiedType: const FullType(int)));
+    }
+    if (object.closeBalance != null) {
+      result
+        ..add('closeBalance')
+        ..add(serializers.serialize(object.closeBalance,
+            specifiedType: const FullType(int)));
+    }
+    if (object.closeIndex != null) {
+      result
+        ..add('closeIndex')
+        ..add(serializers.serialize(object.closeIndex,
+            specifiedType: const FullType(int)));
+    }
+    if (object.accumulatedCloseRewards != null) {
+      result
+        ..add('accumulatedCloseRewards')
+        ..add(serializers.serialize(object.accumulatedCloseRewards,
+            specifiedType: const FullType(int)));
+    }
     if (object.type != null) {
       result
         ..add('type')
@@ -134,78 +206,6 @@ class _$TransactionPaySerializer
         ..add(serializers.serialize(object.group,
             specifiedType: const FullType(String)));
     }
-    if (object.to != null) {
-      result
-        ..add('to')
-        ..add(serializers.serialize(object.to,
-            specifiedType: const FullType(String)));
-    }
-    if (object.toIndex != null) {
-      result
-        ..add('toIndex')
-        ..add(serializers.serialize(object.toIndex,
-            specifiedType: const FullType(int)));
-    }
-    if (object.amount != null) {
-      result
-        ..add('amount')
-        ..add(serializers.serialize(object.amount,
-            specifiedType: const FullType(int)));
-    }
-    if (object.toRewards != null) {
-      result
-        ..add('toRewards')
-        ..add(serializers.serialize(object.toRewards,
-            specifiedType: const FullType(int)));
-    }
-    if (object.toBalance != null) {
-      result
-        ..add('toBalance')
-        ..add(serializers.serialize(object.toBalance,
-            specifiedType: const FullType(int)));
-    }
-    if (object.accumulatedToRewards != null) {
-      result
-        ..add('accumulatedToRewards')
-        ..add(serializers.serialize(object.accumulatedToRewards,
-            specifiedType: const FullType(int)));
-    }
-    if (object.close != null) {
-      result
-        ..add('close')
-        ..add(serializers.serialize(object.close,
-            specifiedType: const FullType(String)));
-    }
-    if (object.closeRewards != null) {
-      result
-        ..add('closeRewards')
-        ..add(serializers.serialize(object.closeRewards,
-            specifiedType: const FullType(int)));
-    }
-    if (object.closeAmount != null) {
-      result
-        ..add('closeAmount')
-        ..add(serializers.serialize(object.closeAmount,
-            specifiedType: const FullType(int)));
-    }
-    if (object.closeBalance != null) {
-      result
-        ..add('closeBalance')
-        ..add(serializers.serialize(object.closeBalance,
-            specifiedType: const FullType(int)));
-    }
-    if (object.closeIndex != null) {
-      result
-        ..add('closeIndex')
-        ..add(serializers.serialize(object.closeIndex,
-            specifiedType: const FullType(int)));
-    }
-    if (object.accumulatedCloseRewards != null) {
-      result
-        ..add('accumulatedCloseRewards')
-        ..add(serializers.serialize(object.accumulatedCloseRewards,
-            specifiedType: const FullType(int)));
-    }
     return result;
   }
 
@@ -221,6 +221,54 @@ class _$TransactionPaySerializer
       iterator.moveNext();
       final dynamic value = iterator.current;
       switch (key) {
+        case 'to':
+          result.to = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
+          break;
+        case 'toIndex':
+          result.toIndex = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'amount':
+          result.amount = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'toRewards':
+          result.toRewards = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'toBalance':
+          result.toBalance = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'accumulatedToRewards':
+          result.accumulatedToRewards = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'close':
+          result.close = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
+          break;
+        case 'closeRewards':
+          result.closeRewards = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'closeAmount':
+          result.closeAmount = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'closeBalance':
+          result.closeBalance = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'closeIndex':
+          result.closeIndex = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'accumulatedCloseRewards':
+          result.accumulatedCloseRewards = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
         case 'type':
           result.type = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String;
@@ -297,54 +345,6 @@ class _$TransactionPaySerializer
           result.group = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String;
           break;
-        case 'to':
-          result.to = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'toIndex':
-          result.toIndex = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'amount':
-          result.amount = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'toRewards':
-          result.toRewards = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'toBalance':
-          result.toBalance = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'accumulatedToRewards':
-          result.accumulatedToRewards = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'close':
-          result.close = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'closeRewards':
-          result.closeRewards = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'closeAmount':
-          result.closeAmount = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'closeBalance':
-          result.closeBalance = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'closeIndex':
-          result.closeIndex = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'accumulatedCloseRewards':
-          result.accumulatedCloseRewards = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
       }
     }
 
@@ -353,6 +353,30 @@ class _$TransactionPaySerializer
 }
 
 class _$TransactionPay extends TransactionPay {
+  @override
+  final String to;
+  @override
+  final int toIndex;
+  @override
+  final int amount;
+  @override
+  final int toRewards;
+  @override
+  final int toBalance;
+  @override
+  final int accumulatedToRewards;
+  @override
+  final String close;
+  @override
+  final int closeRewards;
+  @override
+  final int closeAmount;
+  @override
+  final int closeBalance;
+  @override
+  final int closeIndex;
+  @override
+  final int accumulatedCloseRewards;
   @override
   final String type;
   @override
@@ -391,36 +415,24 @@ class _$TransactionPay extends TransactionPay {
   final int fromRewards;
   @override
   final String group;
-  @override
-  final String to;
-  @override
-  final int toIndex;
-  @override
-  final int amount;
-  @override
-  final int toRewards;
-  @override
-  final int toBalance;
-  @override
-  final int accumulatedToRewards;
-  @override
-  final String close;
-  @override
-  final int closeRewards;
-  @override
-  final int closeAmount;
-  @override
-  final int closeBalance;
-  @override
-  final int closeIndex;
-  @override
-  final int accumulatedCloseRewards;
 
   factory _$TransactionPay([void Function(TransactionPayBuilder) updates]) =>
       (TransactionPayBuilder()..update(updates)).build();
 
   _$TransactionPay._(
-      {this.type,
+      {this.to,
+      this.toIndex,
+      this.amount,
+      this.toRewards,
+      this.toBalance,
+      this.accumulatedToRewards,
+      this.close,
+      this.closeRewards,
+      this.closeAmount,
+      this.closeBalance,
+      this.closeIndex,
+      this.accumulatedCloseRewards,
+      this.type,
       this.index,
       this.round,
       this.timestamp,
@@ -438,19 +450,7 @@ class _$TransactionPay extends TransactionPay {
       this.lastRound,
       this.noteb64,
       this.fromRewards,
-      this.group,
-      this.to,
-      this.toIndex,
-      this.amount,
-      this.toRewards,
-      this.toBalance,
-      this.accumulatedToRewards,
-      this.close,
-      this.closeRewards,
-      this.closeAmount,
-      this.closeBalance,
-      this.closeIndex,
-      this.accumulatedCloseRewards})
+      this.group})
       : super._();
 
   @override
@@ -464,6 +464,18 @@ class _$TransactionPay extends TransactionPay {
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
     return other is TransactionPay &&
+        to == other.to &&
+        toIndex == other.toIndex &&
+        amount == other.amount &&
+        toRewards == other.toRewards &&
+        toBalance == other.toBalance &&
+        accumulatedToRewards == other.accumulatedToRewards &&
+        close == other.close &&
+        closeRewards == other.closeRewards &&
+        closeAmount == other.closeAmount &&
+        closeBalance == other.closeBalance &&
+        closeIndex == other.closeIndex &&
+        accumulatedCloseRewards == other.accumulatedCloseRewards &&
         type == other.type &&
         index == other.index &&
         round == other.round &&
@@ -482,19 +494,7 @@ class _$TransactionPay extends TransactionPay {
         lastRound == other.lastRound &&
         noteb64 == other.noteb64 &&
         fromRewards == other.fromRewards &&
-        group == other.group &&
-        to == other.to &&
-        toIndex == other.toIndex &&
-        amount == other.amount &&
-        toRewards == other.toRewards &&
-        toBalance == other.toBalance &&
-        accumulatedToRewards == other.accumulatedToRewards &&
-        close == other.close &&
-        closeRewards == other.closeRewards &&
-        closeAmount == other.closeAmount &&
-        closeBalance == other.closeBalance &&
-        closeIndex == other.closeIndex &&
-        accumulatedCloseRewards == other.accumulatedCloseRewards;
+        group == other.group;
   }
 
   @override
@@ -517,31 +517,43 @@ class _$TransactionPay extends TransactionPay {
                                                                 $jc(
                                                                     $jc(
                                                                         $jc(
-                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, type.hashCode), index.hashCode), round.hashCode), timestamp.hashCode), balance.hashCode), txid.hashCode), globalIndex.hashCode), assetID.hashCode), assetIndex.hashCode), from.hashCode), fromIndex.hashCode), fromBalance.hashCode),
-                                                                                accumulatedFromRewards.hashCode),
-                                                                            fee.hashCode),
-                                                                        firstRound.hashCode),
-                                                                    lastRound.hashCode),
-                                                                noteb64.hashCode),
-                                                            fromRewards.hashCode),
-                                                        group.hashCode),
-                                                    to.hashCode),
-                                                toIndex.hashCode),
-                                            amount.hashCode),
-                                        toRewards.hashCode),
-                                    toBalance.hashCode),
-                                accumulatedToRewards.hashCode),
-                            close.hashCode),
-                        closeRewards.hashCode),
-                    closeAmount.hashCode),
-                closeBalance.hashCode),
-            closeIndex.hashCode),
-        accumulatedCloseRewards.hashCode));
+                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, to.hashCode), toIndex.hashCode), amount.hashCode), toRewards.hashCode), toBalance.hashCode), accumulatedToRewards.hashCode), close.hashCode), closeRewards.hashCode), closeAmount.hashCode), closeBalance.hashCode), closeIndex.hashCode), accumulatedCloseRewards.hashCode),
+                                                                                type.hashCode),
+                                                                            index.hashCode),
+                                                                        round.hashCode),
+                                                                    timestamp.hashCode),
+                                                                balance.hashCode),
+                                                            txid.hashCode),
+                                                        globalIndex.hashCode),
+                                                    assetID.hashCode),
+                                                assetIndex.hashCode),
+                                            from.hashCode),
+                                        fromIndex.hashCode),
+                                    fromBalance.hashCode),
+                                accumulatedFromRewards.hashCode),
+                            fee.hashCode),
+                        firstRound.hashCode),
+                    lastRound.hashCode),
+                noteb64.hashCode),
+            fromRewards.hashCode),
+        group.hashCode));
   }
 
   @override
   String toString() {
     return (newBuiltValueToStringHelper('TransactionPay')
+          ..add('to', to)
+          ..add('toIndex', toIndex)
+          ..add('amount', amount)
+          ..add('toRewards', toRewards)
+          ..add('toBalance', toBalance)
+          ..add('accumulatedToRewards', accumulatedToRewards)
+          ..add('close', close)
+          ..add('closeRewards', closeRewards)
+          ..add('closeAmount', closeAmount)
+          ..add('closeBalance', closeBalance)
+          ..add('closeIndex', closeIndex)
+          ..add('accumulatedCloseRewards', accumulatedCloseRewards)
           ..add('type', type)
           ..add('index', index)
           ..add('round', round)
@@ -560,19 +572,7 @@ class _$TransactionPay extends TransactionPay {
           ..add('lastRound', lastRound)
           ..add('noteb64', noteb64)
           ..add('fromRewards', fromRewards)
-          ..add('group', group)
-          ..add('to', to)
-          ..add('toIndex', toIndex)
-          ..add('amount', amount)
-          ..add('toRewards', toRewards)
-          ..add('toBalance', toBalance)
-          ..add('accumulatedToRewards', accumulatedToRewards)
-          ..add('close', close)
-          ..add('closeRewards', closeRewards)
-          ..add('closeAmount', closeAmount)
-          ..add('closeBalance', closeBalance)
-          ..add('closeIndex', closeIndex)
-          ..add('accumulatedCloseRewards', accumulatedCloseRewards))
+          ..add('group', group))
         .toString();
   }
 }
@@ -580,6 +580,56 @@ class _$TransactionPay extends TransactionPay {
 class TransactionPayBuilder
     implements Builder<TransactionPay, TransactionPayBuilder> {
   _$TransactionPay _$v;
+
+  String _to;
+  String get to => _$this._to;
+  set to(String to) => _$this._to = to;
+
+  int _toIndex;
+  int get toIndex => _$this._toIndex;
+  set toIndex(int toIndex) => _$this._toIndex = toIndex;
+
+  int _amount;
+  int get amount => _$this._amount;
+  set amount(int amount) => _$this._amount = amount;
+
+  int _toRewards;
+  int get toRewards => _$this._toRewards;
+  set toRewards(int toRewards) => _$this._toRewards = toRewards;
+
+  int _toBalance;
+  int get toBalance => _$this._toBalance;
+  set toBalance(int toBalance) => _$this._toBalance = toBalance;
+
+  int _accumulatedToRewards;
+  int get accumulatedToRewards => _$this._accumulatedToRewards;
+  set accumulatedToRewards(int accumulatedToRewards) =>
+      _$this._accumulatedToRewards = accumulatedToRewards;
+
+  String _close;
+  String get close => _$this._close;
+  set close(String close) => _$this._close = close;
+
+  int _closeRewards;
+  int get closeRewards => _$this._closeRewards;
+  set closeRewards(int closeRewards) => _$this._closeRewards = closeRewards;
+
+  int _closeAmount;
+  int get closeAmount => _$this._closeAmount;
+  set closeAmount(int closeAmount) => _$this._closeAmount = closeAmount;
+
+  int _closeBalance;
+  int get closeBalance => _$this._closeBalance;
+  set closeBalance(int closeBalance) => _$this._closeBalance = closeBalance;
+
+  int _closeIndex;
+  int get closeIndex => _$this._closeIndex;
+  set closeIndex(int closeIndex) => _$this._closeIndex = closeIndex;
+
+  int _accumulatedCloseRewards;
+  int get accumulatedCloseRewards => _$this._accumulatedCloseRewards;
+  set accumulatedCloseRewards(int accumulatedCloseRewards) =>
+      _$this._accumulatedCloseRewards = accumulatedCloseRewards;
 
   String _type;
   String get type => _$this._type;
@@ -658,60 +708,22 @@ class TransactionPayBuilder
   String get group => _$this._group;
   set group(String group) => _$this._group = group;
 
-  String _to;
-  String get to => _$this._to;
-  set to(String to) => _$this._to = to;
-
-  int _toIndex;
-  int get toIndex => _$this._toIndex;
-  set toIndex(int toIndex) => _$this._toIndex = toIndex;
-
-  int _amount;
-  int get amount => _$this._amount;
-  set amount(int amount) => _$this._amount = amount;
-
-  int _toRewards;
-  int get toRewards => _$this._toRewards;
-  set toRewards(int toRewards) => _$this._toRewards = toRewards;
-
-  int _toBalance;
-  int get toBalance => _$this._toBalance;
-  set toBalance(int toBalance) => _$this._toBalance = toBalance;
-
-  int _accumulatedToRewards;
-  int get accumulatedToRewards => _$this._accumulatedToRewards;
-  set accumulatedToRewards(int accumulatedToRewards) =>
-      _$this._accumulatedToRewards = accumulatedToRewards;
-
-  String _close;
-  String get close => _$this._close;
-  set close(String close) => _$this._close = close;
-
-  int _closeRewards;
-  int get closeRewards => _$this._closeRewards;
-  set closeRewards(int closeRewards) => _$this._closeRewards = closeRewards;
-
-  int _closeAmount;
-  int get closeAmount => _$this._closeAmount;
-  set closeAmount(int closeAmount) => _$this._closeAmount = closeAmount;
-
-  int _closeBalance;
-  int get closeBalance => _$this._closeBalance;
-  set closeBalance(int closeBalance) => _$this._closeBalance = closeBalance;
-
-  int _closeIndex;
-  int get closeIndex => _$this._closeIndex;
-  set closeIndex(int closeIndex) => _$this._closeIndex = closeIndex;
-
-  int _accumulatedCloseRewards;
-  int get accumulatedCloseRewards => _$this._accumulatedCloseRewards;
-  set accumulatedCloseRewards(int accumulatedCloseRewards) =>
-      _$this._accumulatedCloseRewards = accumulatedCloseRewards;
-
   TransactionPayBuilder();
 
   TransactionPayBuilder get _$this {
     if (_$v != null) {
+      _to = _$v.to;
+      _toIndex = _$v.toIndex;
+      _amount = _$v.amount;
+      _toRewards = _$v.toRewards;
+      _toBalance = _$v.toBalance;
+      _accumulatedToRewards = _$v.accumulatedToRewards;
+      _close = _$v.close;
+      _closeRewards = _$v.closeRewards;
+      _closeAmount = _$v.closeAmount;
+      _closeBalance = _$v.closeBalance;
+      _closeIndex = _$v.closeIndex;
+      _accumulatedCloseRewards = _$v.accumulatedCloseRewards;
       _type = _$v.type;
       _index = _$v.index;
       _round = _$v.round;
@@ -731,18 +743,6 @@ class TransactionPayBuilder
       _noteb64 = _$v.noteb64;
       _fromRewards = _$v.fromRewards;
       _group = _$v.group;
-      _to = _$v.to;
-      _toIndex = _$v.toIndex;
-      _amount = _$v.amount;
-      _toRewards = _$v.toRewards;
-      _toBalance = _$v.toBalance;
-      _accumulatedToRewards = _$v.accumulatedToRewards;
-      _close = _$v.close;
-      _closeRewards = _$v.closeRewards;
-      _closeAmount = _$v.closeAmount;
-      _closeBalance = _$v.closeBalance;
-      _closeIndex = _$v.closeIndex;
-      _accumulatedCloseRewards = _$v.accumulatedCloseRewards;
       _$v = null;
     }
     return this;
@@ -765,6 +765,18 @@ class TransactionPayBuilder
   _$TransactionPay build() {
     final _$result = _$v ??
         _$TransactionPay._(
+            to: to,
+            toIndex: toIndex,
+            amount: amount,
+            toRewards: toRewards,
+            toBalance: toBalance,
+            accumulatedToRewards: accumulatedToRewards,
+            close: close,
+            closeRewards: closeRewards,
+            closeAmount: closeAmount,
+            closeBalance: closeBalance,
+            closeIndex: closeIndex,
+            accumulatedCloseRewards: accumulatedCloseRewards,
             type: type,
             index: index,
             round: round,
@@ -783,19 +795,7 @@ class TransactionPayBuilder
             lastRound: lastRound,
             noteb64: noteb64,
             fromRewards: fromRewards,
-            group: group,
-            to: to,
-            toIndex: toIndex,
-            amount: amount,
-            toRewards: toRewards,
-            toBalance: toBalance,
-            accumulatedToRewards: accumulatedToRewards,
-            close: close,
-            closeRewards: closeRewards,
-            closeAmount: closeAmount,
-            closeBalance: closeBalance,
-            closeIndex: closeIndex,
-            accumulatedCloseRewards: accumulatedCloseRewards);
+            group: group);
     replace(_$result);
     return _$result;
   }
