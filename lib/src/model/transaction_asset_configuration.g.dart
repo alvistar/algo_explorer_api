@@ -1,40 +1,41 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'transaction_asset_transfer.dart';
+part of 'transaction_asset_configuration.dart';
 
 // **************************************************************************
 // BuiltValueGenerator
 // **************************************************************************
 
-Serializer<TransactionAssetTransfer> _$transactionAssetTransferSerializer =
-    _$TransactionAssetTransferSerializer();
+Serializer<TransactionAssetConfiguration>
+    _$transactionAssetConfigurationSerializer =
+    _$TransactionAssetConfigurationSerializer();
 
-class _$TransactionAssetTransferSerializer
-    implements StructuredSerializer<TransactionAssetTransfer> {
+class _$TransactionAssetConfigurationSerializer
+    implements StructuredSerializer<TransactionAssetConfiguration> {
   @override
   final Iterable<Type> types = const [
-    TransactionAssetTransfer,
-    _$TransactionAssetTransfer
+    TransactionAssetConfiguration,
+    _$TransactionAssetConfiguration
   ];
   @override
-  final String wireName = 'TransactionAssetTransfer';
+  final String wireName = 'TransactionAssetConfiguration';
 
   @override
   Iterable<Object> serialize(
-      Serializers serializers, TransactionAssetTransfer object,
+      Serializers serializers, TransactionAssetConfiguration object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object>[];
     if (object.type != null) {
       result
         ..add('type')
         ..add(serializers.serialize(object.type,
-            specifiedType: const FullType(String)));
+            specifiedType: const FullType(JsonObject)));
     }
     if (object.index != null) {
       result
         ..add('index')
         ..add(serializers.serialize(object.index,
-            specifiedType: const FullType(int)));
+            specifiedType: const FullType(JsonObject)));
     }
     if (object.round != null) {
       result
@@ -138,65 +139,23 @@ class _$TransactionAssetTransferSerializer
         ..add(serializers.serialize(object.group,
             specifiedType: const FullType(String)));
     }
-    if (object.sender != null) {
+    if (object.creator != null) {
       result
-        ..add('sender')
-        ..add(serializers.serialize(object.sender,
+        ..add('creator')
+        ..add(serializers.serialize(object.creator,
             specifiedType: const FullType(String)));
     }
-    if (object.fromAssetBalance != null) {
+    if (object.totalSupply != null) {
       result
-        ..add('fromAssetBalance')
-        ..add(serializers.serialize(object.fromAssetBalance,
+        ..add('totalSupply')
+        ..add(serializers.serialize(object.totalSupply,
             specifiedType: const FullType(int)));
     }
-    if (object.to != null) {
+    if (object.defaultFrozen != null) {
       result
-        ..add('to')
-        ..add(serializers.serialize(object.to,
-            specifiedType: const FullType(String)));
-    }
-    if (object.toIndex != null) {
-      result
-        ..add('toIndex')
-        ..add(serializers.serialize(object.toIndex,
-            specifiedType: const FullType(int)));
-    }
-    if (object.amount != null) {
-      result
-        ..add('amount')
-        ..add(serializers.serialize(object.amount,
-            specifiedType: const FullType(int)));
-    }
-    if (object.toAssetBalance != null) {
-      result
-        ..add('toAssetBalance')
-        ..add(serializers.serialize(object.toAssetBalance,
-            specifiedType: const FullType(int)));
-    }
-    if (object.close != null) {
-      result
-        ..add('close')
-        ..add(serializers.serialize(object.close,
-            specifiedType: const FullType(String)));
-    }
-    if (object.closeAmount != null) {
-      result
-        ..add('closeAmount')
-        ..add(serializers.serialize(object.closeAmount,
-            specifiedType: const FullType(int)));
-    }
-    if (object.closeAssetBalance != null) {
-      result
-        ..add('closeAssetBalance')
-        ..add(serializers.serialize(object.closeAssetBalance,
-            specifiedType: const FullType(int)));
-    }
-    if (object.closeIndex != null) {
-      result
-        ..add('closeIndex')
-        ..add(serializers.serialize(object.closeIndex,
-            specifiedType: const FullType(int)));
+        ..add('defaultFrozen')
+        ..add(serializers.serialize(object.defaultFrozen,
+            specifiedType: const FullType(bool)));
     }
     if (object.unitName != null) {
       result
@@ -210,20 +169,62 @@ class _$TransactionAssetTransferSerializer
         ..add(serializers.serialize(object.assetName,
             specifiedType: const FullType(String)));
     }
+    if (object.url != null) {
+      result
+        ..add('url')
+        ..add(serializers.serialize(object.url,
+            specifiedType: const FullType(String)));
+    }
+    if (object.metadataHashb64 != null) {
+      result
+        ..add('metadataHashb64')
+        ..add(serializers.serialize(object.metadataHashb64,
+            specifiedType: const FullType(String)));
+    }
+    if (object.managerAccount != null) {
+      result
+        ..add('managerAccount')
+        ..add(serializers.serialize(object.managerAccount,
+            specifiedType: const FullType(String)));
+    }
+    if (object.reserveAccount != null) {
+      result
+        ..add('reserveAccount')
+        ..add(serializers.serialize(object.reserveAccount,
+            specifiedType: const FullType(String)));
+    }
+    if (object.freezeAccount != null) {
+      result
+        ..add('freezeAccount')
+        ..add(serializers.serialize(object.freezeAccount,
+            specifiedType: const FullType(String)));
+    }
+    if (object.clawbackAccount != null) {
+      result
+        ..add('clawbackAccount')
+        ..add(serializers.serialize(object.clawbackAccount,
+            specifiedType: const FullType(String)));
+    }
     if (object.decimals != null) {
       result
         ..add('decimals')
         ..add(serializers.serialize(object.decimals,
             specifiedType: const FullType(int)));
     }
+    if (object.assetReason != null) {
+      result
+        ..add('assetReason')
+        ..add(serializers.serialize(object.assetReason,
+            specifiedType: const FullType(String)));
+    }
     return result;
   }
 
   @override
-  TransactionAssetTransfer deserialize(
+  TransactionAssetConfiguration deserialize(
       Serializers serializers, Iterable<Object> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = TransactionAssetTransferBuilder();
+    final result = TransactionAssetConfigurationBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -233,11 +234,11 @@ class _$TransactionAssetTransferSerializer
       switch (key) {
         case 'type':
           result.type = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
+              specifiedType: const FullType(JsonObject)) as JsonObject;
           break;
         case 'index':
           result.index = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
+              specifiedType: const FullType(JsonObject)) as JsonObject;
           break;
         case 'round':
           result.round = serializers.deserialize(value,
@@ -307,45 +308,17 @@ class _$TransactionAssetTransferSerializer
           result.group = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String;
           break;
-        case 'sender':
-          result.sender = serializers.deserialize(value,
+        case 'creator':
+          result.creator = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String;
           break;
-        case 'fromAssetBalance':
-          result.fromAssetBalance = serializers.deserialize(value,
+        case 'totalSupply':
+          result.totalSupply = serializers.deserialize(value,
               specifiedType: const FullType(int)) as int;
           break;
-        case 'to':
-          result.to = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'toIndex':
-          result.toIndex = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'amount':
-          result.amount = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'toAssetBalance':
-          result.toAssetBalance = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'close':
-          result.close = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'closeAmount':
-          result.closeAmount = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'closeAssetBalance':
-          result.closeAssetBalance = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'closeIndex':
-          result.closeIndex = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
+        case 'defaultFrozen':
+          result.defaultFrozen = serializers.deserialize(value,
+              specifiedType: const FullType(bool)) as bool;
           break;
         case 'unitName':
           result.unitName = serializers.deserialize(value,
@@ -355,9 +328,37 @@ class _$TransactionAssetTransferSerializer
           result.assetName = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String;
           break;
+        case 'url':
+          result.url = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
+          break;
+        case 'metadataHashb64':
+          result.metadataHashb64 = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
+          break;
+        case 'managerAccount':
+          result.managerAccount = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
+          break;
+        case 'reserveAccount':
+          result.reserveAccount = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
+          break;
+        case 'freezeAccount':
+          result.freezeAccount = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
+          break;
+        case 'clawbackAccount':
+          result.clawbackAccount = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
+          break;
         case 'decimals':
           result.decimals = serializers.deserialize(value,
               specifiedType: const FullType(int)) as int;
+          break;
+        case 'assetReason':
+          result.assetReason = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
           break;
       }
     }
@@ -366,11 +367,11 @@ class _$TransactionAssetTransferSerializer
   }
 }
 
-class _$TransactionAssetTransfer extends TransactionAssetTransfer {
+class _$TransactionAssetConfiguration extends TransactionAssetConfiguration {
   @override
-  final String type;
+  final JsonObject type;
   @override
-  final int index;
+  final JsonObject index;
   @override
   final int round;
   @override
@@ -406,37 +407,37 @@ class _$TransactionAssetTransfer extends TransactionAssetTransfer {
   @override
   final String group;
   @override
-  final String sender;
+  final String creator;
   @override
-  final int fromAssetBalance;
+  final int totalSupply;
   @override
-  final String to;
-  @override
-  final int toIndex;
-  @override
-  final int amount;
-  @override
-  final int toAssetBalance;
-  @override
-  final String close;
-  @override
-  final int closeAmount;
-  @override
-  final int closeAssetBalance;
-  @override
-  final int closeIndex;
+  final bool defaultFrozen;
   @override
   final String unitName;
   @override
   final String assetName;
   @override
+  final String url;
+  @override
+  final String metadataHashb64;
+  @override
+  final String managerAccount;
+  @override
+  final String reserveAccount;
+  @override
+  final String freezeAccount;
+  @override
+  final String clawbackAccount;
+  @override
   final int decimals;
+  @override
+  final String assetReason;
 
-  factory _$TransactionAssetTransfer(
-          [void Function(TransactionAssetTransferBuilder) updates]) =>
-      (TransactionAssetTransferBuilder()..update(updates)).build();
+  factory _$TransactionAssetConfiguration(
+          [void Function(TransactionAssetConfigurationBuilder) updates]) =>
+      (TransactionAssetConfigurationBuilder()..update(updates)).build();
 
-  _$TransactionAssetTransfer._(
+  _$TransactionAssetConfiguration._(
       {this.type,
       this.index,
       this.round,
@@ -456,34 +457,34 @@ class _$TransactionAssetTransfer extends TransactionAssetTransfer {
       this.noteb64,
       this.fromRewards,
       this.group,
-      this.sender,
-      this.fromAssetBalance,
-      this.to,
-      this.toIndex,
-      this.amount,
-      this.toAssetBalance,
-      this.close,
-      this.closeAmount,
-      this.closeAssetBalance,
-      this.closeIndex,
+      this.creator,
+      this.totalSupply,
+      this.defaultFrozen,
       this.unitName,
       this.assetName,
-      this.decimals})
+      this.url,
+      this.metadataHashb64,
+      this.managerAccount,
+      this.reserveAccount,
+      this.freezeAccount,
+      this.clawbackAccount,
+      this.decimals,
+      this.assetReason})
       : super._();
 
   @override
-  TransactionAssetTransfer rebuild(
-          void Function(TransactionAssetTransferBuilder) updates) =>
+  TransactionAssetConfiguration rebuild(
+          void Function(TransactionAssetConfigurationBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  TransactionAssetTransferBuilder toBuilder() =>
-      TransactionAssetTransferBuilder()..replace(this);
+  TransactionAssetConfigurationBuilder toBuilder() =>
+      TransactionAssetConfigurationBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is TransactionAssetTransfer &&
+    return other is TransactionAssetConfiguration &&
         type == other.type &&
         index == other.index &&
         round == other.round &&
@@ -503,19 +504,19 @@ class _$TransactionAssetTransfer extends TransactionAssetTransfer {
         noteb64 == other.noteb64 &&
         fromRewards == other.fromRewards &&
         group == other.group &&
-        sender == other.sender &&
-        fromAssetBalance == other.fromAssetBalance &&
-        to == other.to &&
-        toIndex == other.toIndex &&
-        amount == other.amount &&
-        toAssetBalance == other.toAssetBalance &&
-        close == other.close &&
-        closeAmount == other.closeAmount &&
-        closeAssetBalance == other.closeAssetBalance &&
-        closeIndex == other.closeIndex &&
+        creator == other.creator &&
+        totalSupply == other.totalSupply &&
+        defaultFrozen == other.defaultFrozen &&
         unitName == other.unitName &&
         assetName == other.assetName &&
-        decimals == other.decimals;
+        url == other.url &&
+        metadataHashb64 == other.metadataHashb64 &&
+        managerAccount == other.managerAccount &&
+        reserveAccount == other.reserveAccount &&
+        freezeAccount == other.freezeAccount &&
+        clawbackAccount == other.clawbackAccount &&
+        decimals == other.decimals &&
+        assetReason == other.assetReason;
   }
 
   @override
@@ -545,24 +546,24 @@ class _$TransactionAssetTransfer extends TransactionAssetTransfer {
                                                                     noteb64.hashCode),
                                                                 fromRewards.hashCode),
                                                             group.hashCode),
-                                                        sender.hashCode),
-                                                    fromAssetBalance.hashCode),
-                                                to.hashCode),
-                                            toIndex.hashCode),
-                                        amount.hashCode),
-                                    toAssetBalance.hashCode),
-                                close.hashCode),
-                            closeAmount.hashCode),
-                        closeAssetBalance.hashCode),
-                    closeIndex.hashCode),
-                unitName.hashCode),
-            assetName.hashCode),
-        decimals.hashCode));
+                                                        creator.hashCode),
+                                                    totalSupply.hashCode),
+                                                defaultFrozen.hashCode),
+                                            unitName.hashCode),
+                                        assetName.hashCode),
+                                    url.hashCode),
+                                metadataHashb64.hashCode),
+                            managerAccount.hashCode),
+                        reserveAccount.hashCode),
+                    freezeAccount.hashCode),
+                clawbackAccount.hashCode),
+            decimals.hashCode),
+        assetReason.hashCode));
   }
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('TransactionAssetTransfer')
+    return (newBuiltValueToStringHelper('TransactionAssetConfiguration')
           ..add('type', type)
           ..add('index', index)
           ..add('round', round)
@@ -582,35 +583,36 @@ class _$TransactionAssetTransfer extends TransactionAssetTransfer {
           ..add('noteb64', noteb64)
           ..add('fromRewards', fromRewards)
           ..add('group', group)
-          ..add('sender', sender)
-          ..add('fromAssetBalance', fromAssetBalance)
-          ..add('to', to)
-          ..add('toIndex', toIndex)
-          ..add('amount', amount)
-          ..add('toAssetBalance', toAssetBalance)
-          ..add('close', close)
-          ..add('closeAmount', closeAmount)
-          ..add('closeAssetBalance', closeAssetBalance)
-          ..add('closeIndex', closeIndex)
+          ..add('creator', creator)
+          ..add('totalSupply', totalSupply)
+          ..add('defaultFrozen', defaultFrozen)
           ..add('unitName', unitName)
           ..add('assetName', assetName)
-          ..add('decimals', decimals))
+          ..add('url', url)
+          ..add('metadataHashb64', metadataHashb64)
+          ..add('managerAccount', managerAccount)
+          ..add('reserveAccount', reserveAccount)
+          ..add('freezeAccount', freezeAccount)
+          ..add('clawbackAccount', clawbackAccount)
+          ..add('decimals', decimals)
+          ..add('assetReason', assetReason))
         .toString();
   }
 }
 
-class TransactionAssetTransferBuilder
+class TransactionAssetConfigurationBuilder
     implements
-        Builder<TransactionAssetTransfer, TransactionAssetTransferBuilder> {
-  _$TransactionAssetTransfer _$v;
+        Builder<TransactionAssetConfiguration,
+            TransactionAssetConfigurationBuilder> {
+  _$TransactionAssetConfiguration _$v;
 
-  String _type;
-  String get type => _$this._type;
-  set type(String type) => _$this._type = type;
+  JsonObject _type;
+  JsonObject get type => _$this._type;
+  set type(JsonObject type) => _$this._type = type;
 
-  int _index;
-  int get index => _$this._index;
-  set index(int index) => _$this._index = index;
+  JsonObject _index;
+  JsonObject get index => _$this._index;
+  set index(JsonObject index) => _$this._index = index;
 
   int _round;
   int get round => _$this._round;
@@ -681,48 +683,18 @@ class TransactionAssetTransferBuilder
   String get group => _$this._group;
   set group(String group) => _$this._group = group;
 
-  String _sender;
-  String get sender => _$this._sender;
-  set sender(String sender) => _$this._sender = sender;
+  String _creator;
+  String get creator => _$this._creator;
+  set creator(String creator) => _$this._creator = creator;
 
-  int _fromAssetBalance;
-  int get fromAssetBalance => _$this._fromAssetBalance;
-  set fromAssetBalance(int fromAssetBalance) =>
-      _$this._fromAssetBalance = fromAssetBalance;
+  int _totalSupply;
+  int get totalSupply => _$this._totalSupply;
+  set totalSupply(int totalSupply) => _$this._totalSupply = totalSupply;
 
-  String _to;
-  String get to => _$this._to;
-  set to(String to) => _$this._to = to;
-
-  int _toIndex;
-  int get toIndex => _$this._toIndex;
-  set toIndex(int toIndex) => _$this._toIndex = toIndex;
-
-  int _amount;
-  int get amount => _$this._amount;
-  set amount(int amount) => _$this._amount = amount;
-
-  int _toAssetBalance;
-  int get toAssetBalance => _$this._toAssetBalance;
-  set toAssetBalance(int toAssetBalance) =>
-      _$this._toAssetBalance = toAssetBalance;
-
-  String _close;
-  String get close => _$this._close;
-  set close(String close) => _$this._close = close;
-
-  int _closeAmount;
-  int get closeAmount => _$this._closeAmount;
-  set closeAmount(int closeAmount) => _$this._closeAmount = closeAmount;
-
-  int _closeAssetBalance;
-  int get closeAssetBalance => _$this._closeAssetBalance;
-  set closeAssetBalance(int closeAssetBalance) =>
-      _$this._closeAssetBalance = closeAssetBalance;
-
-  int _closeIndex;
-  int get closeIndex => _$this._closeIndex;
-  set closeIndex(int closeIndex) => _$this._closeIndex = closeIndex;
+  bool _defaultFrozen;
+  bool get defaultFrozen => _$this._defaultFrozen;
+  set defaultFrozen(bool defaultFrozen) =>
+      _$this._defaultFrozen = defaultFrozen;
 
   String _unitName;
   String get unitName => _$this._unitName;
@@ -732,13 +704,46 @@ class TransactionAssetTransferBuilder
   String get assetName => _$this._assetName;
   set assetName(String assetName) => _$this._assetName = assetName;
 
+  String _url;
+  String get url => _$this._url;
+  set url(String url) => _$this._url = url;
+
+  String _metadataHashb64;
+  String get metadataHashb64 => _$this._metadataHashb64;
+  set metadataHashb64(String metadataHashb64) =>
+      _$this._metadataHashb64 = metadataHashb64;
+
+  String _managerAccount;
+  String get managerAccount => _$this._managerAccount;
+  set managerAccount(String managerAccount) =>
+      _$this._managerAccount = managerAccount;
+
+  String _reserveAccount;
+  String get reserveAccount => _$this._reserveAccount;
+  set reserveAccount(String reserveAccount) =>
+      _$this._reserveAccount = reserveAccount;
+
+  String _freezeAccount;
+  String get freezeAccount => _$this._freezeAccount;
+  set freezeAccount(String freezeAccount) =>
+      _$this._freezeAccount = freezeAccount;
+
+  String _clawbackAccount;
+  String get clawbackAccount => _$this._clawbackAccount;
+  set clawbackAccount(String clawbackAccount) =>
+      _$this._clawbackAccount = clawbackAccount;
+
   int _decimals;
   int get decimals => _$this._decimals;
   set decimals(int decimals) => _$this._decimals = decimals;
 
-  TransactionAssetTransferBuilder();
+  String _assetReason;
+  String get assetReason => _$this._assetReason;
+  set assetReason(String assetReason) => _$this._assetReason = assetReason;
 
-  TransactionAssetTransferBuilder get _$this {
+  TransactionAssetConfigurationBuilder();
+
+  TransactionAssetConfigurationBuilder get _$this {
     if (_$v != null) {
       _type = _$v.type;
       _index = _$v.index;
@@ -759,41 +764,41 @@ class TransactionAssetTransferBuilder
       _noteb64 = _$v.noteb64;
       _fromRewards = _$v.fromRewards;
       _group = _$v.group;
-      _sender = _$v.sender;
-      _fromAssetBalance = _$v.fromAssetBalance;
-      _to = _$v.to;
-      _toIndex = _$v.toIndex;
-      _amount = _$v.amount;
-      _toAssetBalance = _$v.toAssetBalance;
-      _close = _$v.close;
-      _closeAmount = _$v.closeAmount;
-      _closeAssetBalance = _$v.closeAssetBalance;
-      _closeIndex = _$v.closeIndex;
+      _creator = _$v.creator;
+      _totalSupply = _$v.totalSupply;
+      _defaultFrozen = _$v.defaultFrozen;
       _unitName = _$v.unitName;
       _assetName = _$v.assetName;
+      _url = _$v.url;
+      _metadataHashb64 = _$v.metadataHashb64;
+      _managerAccount = _$v.managerAccount;
+      _reserveAccount = _$v.reserveAccount;
+      _freezeAccount = _$v.freezeAccount;
+      _clawbackAccount = _$v.clawbackAccount;
       _decimals = _$v.decimals;
+      _assetReason = _$v.assetReason;
       _$v = null;
     }
     return this;
   }
 
   @override
-  void replace(TransactionAssetTransfer other) {
+  void replace(TransactionAssetConfiguration other) {
     if (other == null) {
       throw ArgumentError.notNull('other');
     }
-    _$v = other as _$TransactionAssetTransfer;
+    _$v = other as _$TransactionAssetConfiguration;
   }
 
   @override
-  void update(void Function(TransactionAssetTransferBuilder) updates) {
+  void update(void Function(TransactionAssetConfigurationBuilder) updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  _$TransactionAssetTransfer build() {
+  _$TransactionAssetConfiguration build() {
     final _$result = _$v ??
-        _$TransactionAssetTransfer._(
+        _$TransactionAssetConfiguration._(
             type: type,
             index: index,
             round: round,
@@ -813,19 +818,19 @@ class TransactionAssetTransferBuilder
             noteb64: noteb64,
             fromRewards: fromRewards,
             group: group,
-            sender: sender,
-            fromAssetBalance: fromAssetBalance,
-            to: to,
-            toIndex: toIndex,
-            amount: amount,
-            toAssetBalance: toAssetBalance,
-            close: close,
-            closeAmount: closeAmount,
-            closeAssetBalance: closeAssetBalance,
-            closeIndex: closeIndex,
+            creator: creator,
+            totalSupply: totalSupply,
+            defaultFrozen: defaultFrozen,
             unitName: unitName,
             assetName: assetName,
-            decimals: decimals);
+            url: url,
+            metadataHashb64: metadataHashb64,
+            managerAccount: managerAccount,
+            reserveAccount: reserveAccount,
+            freezeAccount: freezeAccount,
+            clawbackAccount: clawbackAccount,
+            decimals: decimals,
+            assetReason: assetReason);
     replace(_$result);
     return _$result;
   }

@@ -7,7 +7,7 @@ part of 'transaction_pay.dart';
 // **************************************************************************
 
 Serializer<TransactionPay> _$transactionPaySerializer =
-    new _$TransactionPaySerializer();
+    _$TransactionPaySerializer();
 
 class _$TransactionPaySerializer
     implements StructuredSerializer<TransactionPay> {
@@ -213,7 +213,7 @@ class _$TransactionPaySerializer
   TransactionPay deserialize(
       Serializers serializers, Iterable<Object> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new TransactionPayBuilder();
+    final result = TransactionPayBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -417,7 +417,7 @@ class _$TransactionPay extends TransactionPay {
   final int accumulatedCloseRewards;
 
   factory _$TransactionPay([void Function(TransactionPayBuilder) updates]) =>
-      (new TransactionPayBuilder()..update(updates)).build();
+      (TransactionPayBuilder()..update(updates)).build();
 
   _$TransactionPay._(
       {this.type,
@@ -458,8 +458,7 @@ class _$TransactionPay extends TransactionPay {
       (toBuilder()..update(updates)).build();
 
   @override
-  TransactionPayBuilder toBuilder() =>
-      new TransactionPayBuilder()..replace(this);
+  TransactionPayBuilder toBuilder() => TransactionPayBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -752,7 +751,7 @@ class TransactionPayBuilder
   @override
   void replace(TransactionPay other) {
     if (other == null) {
-      throw new ArgumentError.notNull('other');
+      throw ArgumentError.notNull('other');
     }
     _$v = other as _$TransactionPay;
   }
@@ -765,7 +764,7 @@ class TransactionPayBuilder
   @override
   _$TransactionPay build() {
     final _$result = _$v ??
-        new _$TransactionPay._(
+        _$TransactionPay._(
             type: type,
             index: index,
             round: round,

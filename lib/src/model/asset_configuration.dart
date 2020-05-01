@@ -80,7 +80,7 @@ abstract class AssetConfiguration
   // Boilerplate code needed to wire-up generated code
   AssetConfiguration._();
 
-  factory AssetConfiguration([updates(AssetConfigurationBuilder b)]) =
+  factory AssetConfiguration([Function(AssetConfigurationBuilder) updates]) =
       _$AssetConfiguration;
 
   static Serializer<AssetConfiguration> get serializer =>

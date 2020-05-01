@@ -9,19 +9,16 @@ import 'package:built_value/standard_json_plugin.dart';
 
 part 'serializers.g.dart';
 
-@SerializersFor([
-  TransactionPay,
-  AssetConfiguration,
-  TransactionAssetTransfer
-])
+@SerializersFor([TransactionPay, AssetConfiguration, TransactionAssetTransfer])
 
 //allow all models to be serialized within a list
 
-final Serializers standardSerializers =
-(_$standardSerializers.toBuilder()..addPlugin(StandardJsonPlugin())).build();
+final Serializers standardSerializers = (_$standardSerializers.toBuilder()
+      ..addPlugin(StandardJsonPlugin()))
+    .build();
 
-T deserialize<T>(dynamic value) =>
-    standardSerializers.deserializeWith<T>(standardSerializers.serializerForType(T), value);
+T deserialize<T>(dynamic value) => standardSerializers.deserializeWith<T>(
+    standardSerializers.serializerForType(T), value);
 
-BuiltList<T> deserializeListOf<T>(dynamic value) =>
-    BuiltList.from(value.map((value) => deserialize<T>(value)).toList(growable: false));
+BuiltList<T> deserializeListOf<T>(dynamic value) => BuiltList.from(
+    value.map((value) => deserialize<T>(value)).toList(growable: false));

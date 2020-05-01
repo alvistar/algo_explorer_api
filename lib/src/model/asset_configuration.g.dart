@@ -7,7 +7,7 @@ part of 'asset_configuration.dart';
 // **************************************************************************
 
 Serializer<AssetConfiguration> _$assetConfigurationSerializer =
-    new _$AssetConfigurationSerializer();
+    _$AssetConfigurationSerializer();
 
 class _$AssetConfigurationSerializer
     implements StructuredSerializer<AssetConfiguration> {
@@ -111,7 +111,7 @@ class _$AssetConfigurationSerializer
   AssetConfiguration deserialize(
       Serializers serializers, Iterable<Object> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new AssetConfigurationBuilder();
+    final result = AssetConfigurationBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -214,7 +214,7 @@ class _$AssetConfiguration extends AssetConfiguration {
 
   factory _$AssetConfiguration(
           [void Function(AssetConfigurationBuilder) updates]) =>
-      (new AssetConfigurationBuilder()..update(updates)).build();
+      (AssetConfigurationBuilder()..update(updates)).build();
 
   _$AssetConfiguration._(
       {this.assetID,
@@ -240,7 +240,7 @@ class _$AssetConfiguration extends AssetConfiguration {
 
   @override
   AssetConfigurationBuilder toBuilder() =>
-      new AssetConfigurationBuilder()..replace(this);
+      AssetConfigurationBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -407,7 +407,7 @@ class AssetConfigurationBuilder
   @override
   void replace(AssetConfiguration other) {
     if (other == null) {
-      throw new ArgumentError.notNull('other');
+      throw ArgumentError.notNull('other');
     }
     _$v = other as _$AssetConfiguration;
   }
@@ -420,7 +420,7 @@ class AssetConfigurationBuilder
   @override
   _$AssetConfiguration build() {
     final _$result = _$v ??
-        new _$AssetConfiguration._(
+        _$AssetConfiguration._(
             assetID: assetID,
             creator: creator,
             totalSupply: totalSupply,

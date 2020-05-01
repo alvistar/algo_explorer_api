@@ -50,5 +50,4 @@ class AssetApi {
       extra: response.extra,
     );
   }
-
 }

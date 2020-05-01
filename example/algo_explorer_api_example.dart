@@ -47,5 +47,5 @@ void main() async {
 
   final entry2 = result.data[1];
 
-  print (entry1 == entry2);
+  print(entry1 == entry2);
 }

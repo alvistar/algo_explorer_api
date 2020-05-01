@@ -6,7 +6,7 @@ part of serializers;
 // BuiltValueGenerator
 // **************************************************************************
 
-Serializers _$standardSerializers = (new Serializers().toBuilder()
+Serializers _$standardSerializers = (Serializers().toBuilder()
       ..add(AssetConfiguration.serializer)
       ..add(TransactionAssetTransfer.serializer)
       ..add(TransactionPay.serializer))
