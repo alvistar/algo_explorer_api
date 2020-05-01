@@ -24,120 +24,6 @@ class _$TransactionAssetTransferSerializer
       Serializers serializers, TransactionAssetTransfer object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object>[];
-    if (object.type != null) {
-      result
-        ..add('type')
-        ..add(serializers.serialize(object.type,
-            specifiedType: const FullType(String)));
-    }
-    if (object.index != null) {
-      result
-        ..add('index')
-        ..add(serializers.serialize(object.index,
-            specifiedType: const FullType(int)));
-    }
-    if (object.round != null) {
-      result
-        ..add('round')
-        ..add(serializers.serialize(object.round,
-            specifiedType: const FullType(int)));
-    }
-    if (object.timestamp != null) {
-      result
-        ..add('timestamp')
-        ..add(serializers.serialize(object.timestamp,
-            specifiedType: const FullType(int)));
-    }
-    if (object.balance != null) {
-      result
-        ..add('balance')
-        ..add(serializers.serialize(object.balance,
-            specifiedType: const FullType(int)));
-    }
-    if (object.txid != null) {
-      result
-        ..add('txid')
-        ..add(serializers.serialize(object.txid,
-            specifiedType: const FullType(String)));
-    }
-    if (object.globalIndex != null) {
-      result
-        ..add('globalIndex')
-        ..add(serializers.serialize(object.globalIndex,
-            specifiedType: const FullType(int)));
-    }
-    if (object.assetID != null) {
-      result
-        ..add('assetID')
-        ..add(serializers.serialize(object.assetID,
-            specifiedType: const FullType(JsonObject)));
-    }
-    if (object.assetIndex != null) {
-      result
-        ..add('assetIndex')
-        ..add(serializers.serialize(object.assetIndex,
-            specifiedType: const FullType(int)));
-    }
-    if (object.from != null) {
-      result
-        ..add('from')
-        ..add(serializers.serialize(object.from,
-            specifiedType: const FullType(String)));
-    }
-    if (object.fromIndex != null) {
-      result
-        ..add('fromIndex')
-        ..add(serializers.serialize(object.fromIndex,
-            specifiedType: const FullType(int)));
-    }
-    if (object.fromBalance != null) {
-      result
-        ..add('fromBalance')
-        ..add(serializers.serialize(object.fromBalance,
-            specifiedType: const FullType(int)));
-    }
-    if (object.accumulatedFromRewards != null) {
-      result
-        ..add('accumulatedFromRewards')
-        ..add(serializers.serialize(object.accumulatedFromRewards,
-            specifiedType: const FullType(int)));
-    }
-    if (object.fee != null) {
-      result
-        ..add('fee')
-        ..add(serializers.serialize(object.fee,
-            specifiedType: const FullType(int)));
-    }
-    if (object.firstRound != null) {
-      result
-        ..add('firstRound')
-        ..add(serializers.serialize(object.firstRound,
-            specifiedType: const FullType(int)));
-    }
-    if (object.lastRound != null) {
-      result
-        ..add('lastRound')
-        ..add(serializers.serialize(object.lastRound,
-            specifiedType: const FullType(int)));
-    }
-    if (object.noteb64 != null) {
-      result
-        ..add('noteb64')
-        ..add(serializers.serialize(object.noteb64,
-            specifiedType: const FullType(String)));
-    }
-    if (object.fromRewards != null) {
-      result
-        ..add('fromRewards')
-        ..add(serializers.serialize(object.fromRewards,
-            specifiedType: const FullType(int)));
-    }
-    if (object.group != null) {
-      result
-        ..add('group')
-        ..add(serializers.serialize(object.group,
-            specifiedType: const FullType(String)));
-    }
     if (object.sender != null) {
       result
         ..add('sender')
@@ -216,6 +102,120 @@ class _$TransactionAssetTransferSerializer
         ..add(serializers.serialize(object.decimals,
             specifiedType: const FullType(int)));
     }
+    if (object.type != null) {
+      result
+        ..add('type')
+        ..add(serializers.serialize(object.type,
+            specifiedType: const FullType(String)));
+    }
+    if (object.index != null) {
+      result
+        ..add('index')
+        ..add(serializers.serialize(object.index,
+            specifiedType: const FullType(int)));
+    }
+    if (object.round != null) {
+      result
+        ..add('round')
+        ..add(serializers.serialize(object.round,
+            specifiedType: const FullType(int)));
+    }
+    if (object.timestamp != null) {
+      result
+        ..add('timestamp')
+        ..add(serializers.serialize(object.timestamp,
+            specifiedType: const FullType(int)));
+    }
+    if (object.balance != null) {
+      result
+        ..add('balance')
+        ..add(serializers.serialize(object.balance,
+            specifiedType: const FullType(int)));
+    }
+    if (object.txid != null) {
+      result
+        ..add('txid')
+        ..add(serializers.serialize(object.txid,
+            specifiedType: const FullType(String)));
+    }
+    if (object.globalIndex != null) {
+      result
+        ..add('globalIndex')
+        ..add(serializers.serialize(object.globalIndex,
+            specifiedType: const FullType(int)));
+    }
+    if (object.assetID != null) {
+      result
+        ..add('assetID')
+        ..add(serializers.serialize(object.assetID,
+            specifiedType: const FullType(int)));
+    }
+    if (object.assetIndex != null) {
+      result
+        ..add('assetIndex')
+        ..add(serializers.serialize(object.assetIndex,
+            specifiedType: const FullType(int)));
+    }
+    if (object.from != null) {
+      result
+        ..add('from')
+        ..add(serializers.serialize(object.from,
+            specifiedType: const FullType(String)));
+    }
+    if (object.fromIndex != null) {
+      result
+        ..add('fromIndex')
+        ..add(serializers.serialize(object.fromIndex,
+            specifiedType: const FullType(int)));
+    }
+    if (object.fromBalance != null) {
+      result
+        ..add('fromBalance')
+        ..add(serializers.serialize(object.fromBalance,
+            specifiedType: const FullType(int)));
+    }
+    if (object.accumulatedFromRewards != null) {
+      result
+        ..add('accumulatedFromRewards')
+        ..add(serializers.serialize(object.accumulatedFromRewards,
+            specifiedType: const FullType(int)));
+    }
+    if (object.fee != null) {
+      result
+        ..add('fee')
+        ..add(serializers.serialize(object.fee,
+            specifiedType: const FullType(int)));
+    }
+    if (object.firstRound != null) {
+      result
+        ..add('firstRound')
+        ..add(serializers.serialize(object.firstRound,
+            specifiedType: const FullType(int)));
+    }
+    if (object.lastRound != null) {
+      result
+        ..add('lastRound')
+        ..add(serializers.serialize(object.lastRound,
+            specifiedType: const FullType(int)));
+    }
+    if (object.noteb64 != null) {
+      result
+        ..add('noteb64')
+        ..add(serializers.serialize(object.noteb64,
+            specifiedType: const FullType(String)));
+    }
+    if (object.fromRewards != null) {
+      result
+        ..add('fromRewards')
+        ..add(serializers.serialize(object.fromRewards,
+            specifiedType: const FullType(int)));
+    }
+    if (object.group != null) {
+      result
+        ..add('group')
+        ..add(serializers.serialize(object.group,
+            specifiedType: const FullType(String)));
+    }
     return result;
   }
 
@@ -231,82 +231,6 @@ class _$TransactionAssetTransferSerializer
       iterator.moveNext();
       final dynamic value = iterator.current;
       switch (key) {
-        case 'type':
-          result.type = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'index':
-          result.index = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'round':
-          result.round = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'timestamp':
-          result.timestamp = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'balance':
-          result.balance = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'txid':
-          result.txid = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'globalIndex':
-          result.globalIndex = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'assetID':
-          result.assetID = serializers.deserialize(value,
-              specifiedType: const FullType(JsonObject)) as JsonObject;
-          break;
-        case 'assetIndex':
-          result.assetIndex = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'from':
-          result.from = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'fromIndex':
-          result.fromIndex = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'fromBalance':
-          result.fromBalance = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'accumulatedFromRewards':
-          result.accumulatedFromRewards = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'fee':
-          result.fee = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'firstRound':
-          result.firstRound = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'lastRound':
-          result.lastRound = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'noteb64':
-          result.noteb64 = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'fromRewards':
-          result.fromRewards = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'group':
-          result.group = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
         case 'sender':
           result.sender = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String;
@@ -359,6 +283,82 @@ class _$TransactionAssetTransferSerializer
           result.decimals = serializers.deserialize(value,
               specifiedType: const FullType(int)) as int;
           break;
+        case 'type':
+          result.type = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
+          break;
+        case 'index':
+          result.index = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'round':
+          result.round = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'timestamp':
+          result.timestamp = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'balance':
+          result.balance = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'txid':
+          result.txid = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
+          break;
+        case 'globalIndex':
+          result.globalIndex = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'assetID':
+          result.assetID = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'assetIndex':
+          result.assetIndex = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'from':
+          result.from = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
+          break;
+        case 'fromIndex':
+          result.fromIndex = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'fromBalance':
+          result.fromBalance = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'accumulatedFromRewards':
+          result.accumulatedFromRewards = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'fee':
+          result.fee = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'firstRound':
+          result.firstRound = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'lastRound':
+          result.lastRound = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'noteb64':
+          result.noteb64 = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
+          break;
+        case 'fromRewards':
+          result.fromRewards = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
+          break;
+        case 'group':
+          result.group = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String;
+          break;
       }
     }
 
@@ -367,44 +367,6 @@ class _$TransactionAssetTransferSerializer
 }
 
 class _$TransactionAssetTransfer extends TransactionAssetTransfer {
-  @override
-  final String type;
-  @override
-  final int index;
-  @override
-  final int round;
-  @override
-  final int timestamp;
-  @override
-  final int balance;
-  @override
-  final String txid;
-  @override
-  final int globalIndex;
-  @override
-  final JsonObject assetID;
-  @override
-  final int assetIndex;
-  @override
-  final String from;
-  @override
-  final int fromIndex;
-  @override
-  final int fromBalance;
-  @override
-  final int accumulatedFromRewards;
-  @override
-  final int fee;
-  @override
-  final int firstRound;
-  @override
-  final int lastRound;
-  @override
-  final String noteb64;
-  @override
-  final int fromRewards;
-  @override
-  final String group;
   @override
   final String sender;
   @override
@@ -431,13 +393,64 @@ class _$TransactionAssetTransfer extends TransactionAssetTransfer {
   final String assetName;
   @override
   final int decimals;
+  @override
+  final String type;
+  @override
+  final int index;
+  @override
+  final int round;
+  @override
+  final int timestamp;
+  @override
+  final int balance;
+  @override
+  final String txid;
+  @override
+  final int globalIndex;
+  @override
+  final int assetID;
+  @override
+  final int assetIndex;
+  @override
+  final String from;
+  @override
+  final int fromIndex;
+  @override
+  final int fromBalance;
+  @override
+  final int accumulatedFromRewards;
+  @override
+  final int fee;
+  @override
+  final int firstRound;
+  @override
+  final int lastRound;
+  @override
+  final String noteb64;
+  @override
+  final int fromRewards;
+  @override
+  final String group;
 
   factory _$TransactionAssetTransfer(
           [void Function(TransactionAssetTransferBuilder) updates]) =>
       (TransactionAssetTransferBuilder()..update(updates)).build();
 
   _$TransactionAssetTransfer._(
-      {this.type,
+      {this.sender,
+      this.fromAssetBalance,
+      this.to,
+      this.toIndex,
+      this.amount,
+      this.toAssetBalance,
+      this.close,
+      this.closeAmount,
+      this.closeAssetBalance,
+      this.closeIndex,
+      this.unitName,
+      this.assetName,
+      this.decimals,
+      this.type,
       this.index,
       this.round,
       this.timestamp,
@@ -455,20 +468,7 @@ class _$TransactionAssetTransfer extends TransactionAssetTransfer {
       this.lastRound,
       this.noteb64,
       this.fromRewards,
-      this.group,
-      this.sender,
-      this.fromAssetBalance,
-      this.to,
-      this.toIndex,
-      this.amount,
-      this.toAssetBalance,
-      this.close,
-      this.closeAmount,
-      this.closeAssetBalance,
-      this.closeIndex,
-      this.unitName,
-      this.assetName,
-      this.decimals})
+      this.group})
       : super._();
 
   @override
@@ -484,6 +484,19 @@ class _$TransactionAssetTransfer extends TransactionAssetTransfer {
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
     return other is TransactionAssetTransfer &&
+        sender == other.sender &&
+        fromAssetBalance == other.fromAssetBalance &&
+        to == other.to &&
+        toIndex == other.toIndex &&
+        amount == other.amount &&
+        toAssetBalance == other.toAssetBalance &&
+        close == other.close &&
+        closeAmount == other.closeAmount &&
+        closeAssetBalance == other.closeAssetBalance &&
+        closeIndex == other.closeIndex &&
+        unitName == other.unitName &&
+        assetName == other.assetName &&
+        decimals == other.decimals &&
         type == other.type &&
         index == other.index &&
         round == other.round &&
@@ -502,20 +515,7 @@ class _$TransactionAssetTransfer extends TransactionAssetTransfer {
         lastRound == other.lastRound &&
         noteb64 == other.noteb64 &&
         fromRewards == other.fromRewards &&
-        group == other.group &&
-        sender == other.sender &&
-        fromAssetBalance == other.fromAssetBalance &&
-        to == other.to &&
-        toIndex == other.toIndex &&
-        amount == other.amount &&
-        toAssetBalance == other.toAssetBalance &&
-        close == other.close &&
-        closeAmount == other.closeAmount &&
-        closeAssetBalance == other.closeAssetBalance &&
-        closeIndex == other.closeIndex &&
-        unitName == other.unitName &&
-        assetName == other.assetName &&
-        decimals == other.decimals;
+        group == other.group;
   }
 
   @override
@@ -538,31 +538,44 @@ class _$TransactionAssetTransfer extends TransactionAssetTransfer {
                                                                 $jc(
                                                                     $jc(
                                                                         $jc(
-                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, type.hashCode), index.hashCode), round.hashCode), timestamp.hashCode), balance.hashCode), txid.hashCode), globalIndex.hashCode), assetID.hashCode), assetIndex.hashCode), from.hashCode), fromIndex.hashCode), fromBalance.hashCode), accumulatedFromRewards.hashCode),
-                                                                                fee.hashCode),
-                                                                            firstRound.hashCode),
-                                                                        lastRound.hashCode),
-                                                                    noteb64.hashCode),
-                                                                fromRewards.hashCode),
-                                                            group.hashCode),
-                                                        sender.hashCode),
-                                                    fromAssetBalance.hashCode),
-                                                to.hashCode),
-                                            toIndex.hashCode),
-                                        amount.hashCode),
-                                    toAssetBalance.hashCode),
-                                close.hashCode),
-                            closeAmount.hashCode),
-                        closeAssetBalance.hashCode),
-                    closeIndex.hashCode),
-                unitName.hashCode),
-            assetName.hashCode),
-        decimals.hashCode));
+                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, sender.hashCode), fromAssetBalance.hashCode), to.hashCode), toIndex.hashCode), amount.hashCode), toAssetBalance.hashCode), close.hashCode), closeAmount.hashCode), closeAssetBalance.hashCode), closeIndex.hashCode), unitName.hashCode), assetName.hashCode), decimals.hashCode),
+                                                                                type.hashCode),
+                                                                            index.hashCode),
+                                                                        round.hashCode),
+                                                                    timestamp.hashCode),
+                                                                balance.hashCode),
+                                                            txid.hashCode),
+                                                        globalIndex.hashCode),
+                                                    assetID.hashCode),
+                                                assetIndex.hashCode),
+                                            from.hashCode),
+                                        fromIndex.hashCode),
+                                    fromBalance.hashCode),
+                                accumulatedFromRewards.hashCode),
+                            fee.hashCode),
+                        firstRound.hashCode),
+                    lastRound.hashCode),
+                noteb64.hashCode),
+            fromRewards.hashCode),
+        group.hashCode));
   }
 
   @override
   String toString() {
     return (newBuiltValueToStringHelper('TransactionAssetTransfer')
+          ..add('sender', sender)
+          ..add('fromAssetBalance', fromAssetBalance)
+          ..add('to', to)
+          ..add('toIndex', toIndex)
+          ..add('amount', amount)
+          ..add('toAssetBalance', toAssetBalance)
+          ..add('close', close)
+          ..add('closeAmount', closeAmount)
+          ..add('closeAssetBalance', closeAssetBalance)
+          ..add('closeIndex', closeIndex)
+          ..add('unitName', unitName)
+          ..add('assetName', assetName)
+          ..add('decimals', decimals)
           ..add('type', type)
           ..add('index', index)
           ..add('round', round)
@@ -581,20 +594,7 @@ class _$TransactionAssetTransfer extends TransactionAssetTransfer {
           ..add('lastRound', lastRound)
           ..add('noteb64', noteb64)
           ..add('fromRewards', fromRewards)
-          ..add('group', group)
-          ..add('sender', sender)
-          ..add('fromAssetBalance', fromAssetBalance)
-          ..add('to', to)
-          ..add('toIndex', toIndex)
-          ..add('amount', amount)
-          ..add('toAssetBalance', toAssetBalance)
-          ..add('close', close)
-          ..add('closeAmount', closeAmount)
-          ..add('closeAssetBalance', closeAssetBalance)
-          ..add('closeIndex', closeIndex)
-          ..add('unitName', unitName)
-          ..add('assetName', assetName)
-          ..add('decimals', decimals))
+          ..add('group', group))
         .toString();
   }
 }
@@ -603,83 +603,6 @@ class TransactionAssetTransferBuilder
     implements
         Builder<TransactionAssetTransfer, TransactionAssetTransferBuilder> {
   _$TransactionAssetTransfer _$v;
-
-  String _type;
-  String get type => _$this._type;
-  set type(String type) => _$this._type = type;
-
-  int _index;
-  int get index => _$this._index;
-  set index(int index) => _$this._index = index;
-
-  int _round;
-  int get round => _$this._round;
-  set round(int round) => _$this._round = round;
-
-  int _timestamp;
-  int get timestamp => _$this._timestamp;
-  set timestamp(int timestamp) => _$this._timestamp = timestamp;
-
-  int _balance;
-  int get balance => _$this._balance;
-  set balance(int balance) => _$this._balance = balance;
-
-  String _txid;
-  String get txid => _$this._txid;
-  set txid(String txid) => _$this._txid = txid;
-
-  int _globalIndex;
-  int get globalIndex => _$this._globalIndex;
-  set globalIndex(int globalIndex) => _$this._globalIndex = globalIndex;
-
-  JsonObject _assetID;
-  JsonObject get assetID => _$this._assetID;
-  set assetID(JsonObject assetID) => _$this._assetID = assetID;
-
-  int _assetIndex;
-  int get assetIndex => _$this._assetIndex;
-  set assetIndex(int assetIndex) => _$this._assetIndex = assetIndex;
-
-  String _from;
-  String get from => _$this._from;
-  set from(String from) => _$this._from = from;
-
-  int _fromIndex;
-  int get fromIndex => _$this._fromIndex;
-  set fromIndex(int fromIndex) => _$this._fromIndex = fromIndex;
-
-  int _fromBalance;
-  int get fromBalance => _$this._fromBalance;
-  set fromBalance(int fromBalance) => _$this._fromBalance = fromBalance;
-
-  int _accumulatedFromRewards;
-  int get accumulatedFromRewards => _$this._accumulatedFromRewards;
-  set accumulatedFromRewards(int accumulatedFromRewards) =>
-      _$this._accumulatedFromRewards = accumulatedFromRewards;
-
-  int _fee;
-  int get fee => _$this._fee;
-  set fee(int fee) => _$this._fee = fee;
-
-  int _firstRound;
-  int get firstRound => _$this._firstRound;
-  set firstRound(int firstRound) => _$this._firstRound = firstRound;
-
-  int _lastRound;
-  int get lastRound => _$this._lastRound;
-  set lastRound(int lastRound) => _$this._lastRound = lastRound;
-
-  String _noteb64;
-  String get noteb64 => _$this._noteb64;
-  set noteb64(String noteb64) => _$this._noteb64 = noteb64;
-
-  int _fromRewards;
-  int get fromRewards => _$this._fromRewards;
-  set fromRewards(int fromRewards) => _$this._fromRewards = fromRewards;
-
-  String _group;
-  String get group => _$this._group;
-  set group(String group) => _$this._group = group;
 
   String _sender;
   String get sender => _$this._sender;
@@ -736,10 +659,100 @@ class TransactionAssetTransferBuilder
   int get decimals => _$this._decimals;
   set decimals(int decimals) => _$this._decimals = decimals;
 
+  String _type;
+  String get type => _$this._type;
+  set type(String type) => _$this._type = type;
+
+  int _index;
+  int get index => _$this._index;
+  set index(int index) => _$this._index = index;
+
+  int _round;
+  int get round => _$this._round;
+  set round(int round) => _$this._round = round;
+
+  int _timestamp;
+  int get timestamp => _$this._timestamp;
+  set timestamp(int timestamp) => _$this._timestamp = timestamp;
+
+  int _balance;
+  int get balance => _$this._balance;
+  set balance(int balance) => _$this._balance = balance;
+
+  String _txid;
+  String get txid => _$this._txid;
+  set txid(String txid) => _$this._txid = txid;
+
+  int _globalIndex;
+  int get globalIndex => _$this._globalIndex;
+  set globalIndex(int globalIndex) => _$this._globalIndex = globalIndex;
+
+  int _assetID;
+  int get assetID => _$this._assetID;
+  set assetID(int assetID) => _$this._assetID = assetID;
+
+  int _assetIndex;
+  int get assetIndex => _$this._assetIndex;
+  set assetIndex(int assetIndex) => _$this._assetIndex = assetIndex;
+
+  String _from;
+  String get from => _$this._from;
+  set from(String from) => _$this._from = from;
+
+  int _fromIndex;
+  int get fromIndex => _$this._fromIndex;
+  set fromIndex(int fromIndex) => _$this._fromIndex = fromIndex;
+
+  int _fromBalance;
+  int get fromBalance => _$this._fromBalance;
+  set fromBalance(int fromBalance) => _$this._fromBalance = fromBalance;
+
+  int _accumulatedFromRewards;
+  int get accumulatedFromRewards => _$this._accumulatedFromRewards;
+  set accumulatedFromRewards(int accumulatedFromRewards) =>
+      _$this._accumulatedFromRewards = accumulatedFromRewards;
+
+  int _fee;
+  int get fee => _$this._fee;
+  set fee(int fee) => _$this._fee = fee;
+
+  int _firstRound;
+  int get firstRound => _$this._firstRound;
+  set firstRound(int firstRound) => _$this._firstRound = firstRound;
+
+  int _lastRound;
+  int get lastRound => _$this._lastRound;
+  set lastRound(int lastRound) => _$this._lastRound = lastRound;
+
+  String _noteb64;
+  String get noteb64 => _$this._noteb64;
+  set noteb64(String noteb64) => _$this._noteb64 = noteb64;
+
+  int _fromRewards;
+  int get fromRewards => _$this._fromRewards;
+  set fromRewards(int fromRewards) => _$this._fromRewards = fromRewards;
+
+  String _group;
+  String get group => _$this._group;
+  set group(String group) => _$this._group = group;
+
   TransactionAssetTransferBuilder();
 
   TransactionAssetTransferBuilder get _$this {
     if (_$v != null) {
+      _sender = _$v.sender;
+      _fromAssetBalance = _$v.fromAssetBalance;
+      _to = _$v.to;
+      _toIndex = _$v.toIndex;
+      _amount = _$v.amount;
+      _toAssetBalance = _$v.toAssetBalance;
+      _close = _$v.close;
+      _closeAmount = _$v.closeAmount;
+      _closeAssetBalance = _$v.closeAssetBalance;
+      _closeIndex = _$v.closeIndex;
+      _unitName = _$v.unitName;
+      _assetName = _$v.assetName;
+      _decimals = _$v.decimals;
       _type = _$v.type;
       _index = _$v.index;
       _round = _$v.round;
@@ -759,19 +772,6 @@ class TransactionAssetTransferBuilder
       _noteb64 = _$v.noteb64;
       _fromRewards = _$v.fromRewards;
       _group = _$v.group;
-      _sender = _$v.sender;
-      _fromAssetBalance = _$v.fromAssetBalance;
-      _to = _$v.to;
-      _toIndex = _$v.toIndex;
-      _amount = _$v.amount;
-      _toAssetBalance = _$v.toAssetBalance;
-      _close = _$v.close;
-      _closeAmount = _$v.closeAmount;
-      _closeAssetBalance = _$v.closeAssetBalance;
-      _closeIndex = _$v.closeIndex;
-      _unitName = _$v.unitName;
-      _assetName = _$v.assetName;
-      _decimals = _$v.decimals;
       _$v = null;
     }
     return this;
@@ -794,6 +794,19 @@ class TransactionAssetTransferBuilder
   _$TransactionAssetTransfer build() {
     final _$result = _$v ??
         _$TransactionAssetTransfer._(
+            sender: sender,
+            fromAssetBalance: fromAssetBalance,
+            to: to,
+            toIndex: toIndex,
+            amount: amount,
+            toAssetBalance: toAssetBalance,
+            close: close,
+            closeAmount: closeAmount,
+            closeAssetBalance: closeAssetBalance,
+            closeIndex: closeIndex,
+            unitName: unitName,
+            assetName: assetName,
+            decimals: decimals,
             type: type,
             index: index,
             round: round,
@@ -812,20 +825,7 @@ class TransactionAssetTransferBuilder
             lastRound: lastRound,
             noteb64: noteb64,
             fromRewards: fromRewards,
-            group: group,
-            sender: sender,
-            fromAssetBalance: fromAssetBalance,
-            to: to,
-            toIndex: toIndex,
-            amount: amount,
-            toAssetBalance: toAssetBalance,
-            close: close,
-            closeAmount: closeAmount,
-            closeAssetBalance: closeAssetBalance,
-            closeIndex: closeIndex,
-            unitName: unitName,
-            assetName: assetName,
-            decimals: decimals);
+            group: group);
     replace(_$result);
     return _$result;
   }

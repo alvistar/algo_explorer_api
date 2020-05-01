@@ -1,108 +1,23 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'transaction_asset_configuration.dart';
+part of 'transaction.dart';
 
 // **************************************************************************
 // BuiltValueGenerator
 // **************************************************************************
 
-Serializer<TransactionAssetConfiguration>
-    _$transactionAssetConfigurationSerializer =
-    _$TransactionAssetConfigurationSerializer();
+Serializer<Transaction> _$transactionSerializer = _$TransactionSerializer();
 
-class _$TransactionAssetConfigurationSerializer
-    implements StructuredSerializer<TransactionAssetConfiguration> {
+class _$TransactionSerializer implements StructuredSerializer<Transaction> {
   @override
-  final Iterable<Type> types = const [
-    TransactionAssetConfiguration,
-    _$TransactionAssetConfiguration
-  ];
+  final Iterable<Type> types = const [Transaction, _$Transaction];
   @override
-  final String wireName = 'TransactionAssetConfiguration';
+  final String wireName = 'Transaction';
 
   @override
-  Iterable<Object> serialize(
-      Serializers serializers, TransactionAssetConfiguration object,
+  Iterable<Object> serialize(Serializers serializers, Transaction object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object>[];
-    if (object.creator != null) {
-      result
-        ..add('creator')
-        ..add(serializers.serialize(object.creator,
-            specifiedType: const FullType(String)));
-    }
-    if (object.totalSupply != null) {
-      result
-        ..add('totalSupply')
-        ..add(serializers.serialize(object.totalSupply,
-            specifiedType: const FullType(int)));
-    }
-    if (object.defaultFrozen != null) {
-      result
-        ..add('defaultFrozen')
-        ..add(serializers.serialize(object.defaultFrozen,
-            specifiedType: const FullType(bool)));
-    }
-    if (object.unitName != null) {
-      result
-        ..add('unitName')
-        ..add(serializers.serialize(object.unitName,
-            specifiedType: const FullType(String)));
-    }
-    if (object.assetName != null) {
-      result
-        ..add('assetName')
-        ..add(serializers.serialize(object.assetName,
-            specifiedType: const FullType(String)));
-    }
-    if (object.url != null) {
-      result
-        ..add('url')
-        ..add(serializers.serialize(object.url,
-            specifiedType: const FullType(String)));
-    }
-    if (object.metadataHashb64 != null) {
-      result
-        ..add('metadataHashb64')
-        ..add(serializers.serialize(object.metadataHashb64,
-            specifiedType: const FullType(String)));
-    }
-    if (object.managerAccount != null) {
-      result
-        ..add('managerAccount')
-        ..add(serializers.serialize(object.managerAccount,
-            specifiedType: const FullType(String)));
-    }
-    if (object.reserveAccount != null) {
-      result
-        ..add('reserveAccount')
-        ..add(serializers.serialize(object.reserveAccount,
-            specifiedType: const FullType(String)));
-    }
-    if (object.freezeAccount != null) {
-      result
-        ..add('freezeAccount')
-        ..add(serializers.serialize(object.freezeAccount,
-            specifiedType: const FullType(String)));
-    }
-    if (object.clawbackAccount != null) {
-      result
-        ..add('clawbackAccount')
-        ..add(serializers.serialize(object.clawbackAccount,
-            specifiedType: const FullType(String)));
-    }
-    if (object.decimals != null) {
-      result
-        ..add('decimals')
-        ..add(serializers.serialize(object.decimals,
-            specifiedType: const FullType(int)));
-    }
-    if (object.assetReason != null) {
-      result
-        ..add('assetReason')
-        ..add(serializers.serialize(object.assetReason,
-            specifiedType: const FullType(String)));
-    }
     if (object.type != null) {
       result
         ..add('type')
@@ -221,10 +136,9 @@ class _$TransactionAssetConfigurationSerializer
   }
 
   @override
-  TransactionAssetConfiguration deserialize(
-      Serializers serializers, Iterable<Object> serialized,
+  Transaction deserialize(Serializers serializers, Iterable<Object> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = TransactionAssetConfigurationBuilder();
+    final result = TransactionBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -232,58 +146,6 @@ class _$TransactionAssetConfigurationSerializer
       iterator.moveNext();
       final dynamic value = iterator.current;
       switch (key) {
-        case 'creator':
-          result.creator = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'totalSupply':
-          result.totalSupply = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'defaultFrozen':
-          result.defaultFrozen = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool;
-          break;
-        case 'unitName':
-          result.unitName = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'assetName':
-          result.assetName = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'url':
-          result.url = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'metadataHashb64':
-          result.metadataHashb64 = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'managerAccount':
-          result.managerAccount = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'reserveAccount':
-          result.reserveAccount = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'freezeAccount':
-          result.freezeAccount = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'clawbackAccount':
-          result.clawbackAccount = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
-        case 'decimals':
-          result.decimals = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int;
-          break;
-        case 'assetReason':
-          result.assetReason = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String;
-          break;
         case 'type':
           result.type = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String;
@@ -367,33 +229,7 @@ class _$TransactionAssetConfigurationSerializer
   }
 }
 
-class _$TransactionAssetConfiguration extends TransactionAssetConfiguration {
-  @override
-  final String creator;
-  @override
-  final int totalSupply;
-  @override
-  final bool defaultFrozen;
-  @override
-  final String unitName;
-  @override
-  final String assetName;
-  @override
-  final String url;
-  @override
-  final String metadataHashb64;
-  @override
-  final String managerAccount;
-  @override
-  final String reserveAccount;
-  @override
-  final String freezeAccount;
-  @override
-  final String clawbackAccount;
-  @override
-  final int decimals;
-  @override
-  final String assetReason;
+class _$Transaction extends Transaction {
   @override
   final String type;
   @override
@@ -433,25 +269,11 @@ class _$TransactionAssetConfiguration extends TransactionAssetConfiguration {
   @override
   final String group;
 
-  factory _$TransactionAssetConfiguration(
-          [void Function(TransactionAssetConfigurationBuilder) updates]) =>
-      (TransactionAssetConfigurationBuilder()..update(updates)).build();
+  factory _$Transaction([void Function(TransactionBuilder) updates]) =>
+      (TransactionBuilder()..update(updates)).build();
 
-  _$TransactionAssetConfiguration._(
-      {this.creator,
-      this.totalSupply,
-      this.defaultFrozen,
-      this.unitName,
-      this.assetName,
-      this.url,
-      this.metadataHashb64,
-      this.managerAccount,
-      this.reserveAccount,
-      this.freezeAccount,
-      this.clawbackAccount,
-      this.decimals,
-      this.assetReason,
-      this.type,
+  _$Transaction._(
+      {this.type,
       this.index,
       this.round,
       this.timestamp,
@@ -473,31 +295,16 @@ class _$TransactionAssetConfiguration extends TransactionAssetConfiguration {
       : super._();
 
   @override
-  TransactionAssetConfiguration rebuild(
-          void Function(TransactionAssetConfigurationBuilder) updates) =>
+  Transaction rebuild(void Function(TransactionBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  TransactionAssetConfigurationBuilder toBuilder() =>
-      TransactionAssetConfigurationBuilder()..replace(this);
+  TransactionBuilder toBuilder() => TransactionBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is TransactionAssetConfiguration &&
-        creator == other.creator &&
-        totalSupply == other.totalSupply &&
-        defaultFrozen == other.defaultFrozen &&
-        unitName == other.unitName &&
-        assetName == other.assetName &&
-        url == other.url &&
-        metadataHashb64 == other.metadataHashb64 &&
-        managerAccount == other.managerAccount &&
-        reserveAccount == other.reserveAccount &&
-        freezeAccount == other.freezeAccount &&
-        clawbackAccount == other.clawbackAccount &&
-        decimals == other.decimals &&
-        assetReason == other.assetReason &&
+    return other is Transaction &&
         type == other.type &&
         index == other.index &&
         round == other.round &&
@@ -539,12 +346,18 @@ class _$TransactionAssetConfiguration extends TransactionAssetConfiguration {
                                                                 $jc(
                                                                     $jc(
                                                                         $jc(
-                                                                            $jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc($jc(0, creator.hashCode), totalSupply.hashCode), defaultFrozen.hashCode), unitName.hashCode), assetName.hashCode), url.hashCode), metadataHashb64.hashCode), managerAccount.hashCode), reserveAccount.hashCode), freezeAccount.hashCode), clawbackAccount.hashCode), decimals.hashCode), assetReason.hashCode),
-                                                                                type.hashCode),
-                                                                            index.hashCode),
-                                                                        round.hashCode),
-                                                                    timestamp.hashCode),
-                                                                balance.hashCode),
+                                                                            $jc(
+                                                                                0,
+                                                                                type
+                                                                                    .hashCode),
+                                                                            index
+                                                                                .hashCode),
+                                                                        round
+                                                                            .hashCode),
+                                                                    timestamp
+                                                                        .hashCode),
+                                                                balance
+                                                                    .hashCode),
                                                             txid.hashCode),
                                                         globalIndex.hashCode),
                                                     assetID.hashCode),
@@ -563,20 +376,7 @@ class _$TransactionAssetConfiguration extends TransactionAssetConfiguration {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('TransactionAssetConfiguration')
-          ..add('creator', creator)
-          ..add('totalSupply', totalSupply)
-          ..add('defaultFrozen', defaultFrozen)
-          ..add('unitName', unitName)
-          ..add('assetName', assetName)
-          ..add('url', url)
-          ..add('metadataHashb64', metadataHashb64)
-          ..add('managerAccount', managerAccount)
-          ..add('reserveAccount', reserveAccount)
-          ..add('freezeAccount', freezeAccount)
-          ..add('clawbackAccount', clawbackAccount)
-          ..add('decimals', decimals)
-          ..add('assetReason', assetReason)
+    return (newBuiltValueToStringHelper('Transaction')
           ..add('type', type)
           ..add('index', index)
           ..add('round', round)
@@ -600,69 +400,8 @@ class _$TransactionAssetConfiguration extends TransactionAssetConfiguration {
   }
 }
 
-class TransactionAssetConfigurationBuilder
-    implements
-        Builder<TransactionAssetConfiguration,
-            TransactionAssetConfigurationBuilder> {
-  _$TransactionAssetConfiguration _$v;
-
-  String _creator;
-  String get creator => _$this._creator;
-  set creator(String creator) => _$this._creator = creator;
-
-  int _totalSupply;
-  int get totalSupply => _$this._totalSupply;
-  set totalSupply(int totalSupply) => _$this._totalSupply = totalSupply;
-
-  bool _defaultFrozen;
-  bool get defaultFrozen => _$this._defaultFrozen;
-  set defaultFrozen(bool defaultFrozen) =>
-      _$this._defaultFrozen = defaultFrozen;
-
-  String _unitName;
-  String get unitName => _$this._unitName;
-  set unitName(String unitName) => _$this._unitName = unitName;
-
-  String _assetName;
-  String get assetName => _$this._assetName;
-  set assetName(String assetName) => _$this._assetName = assetName;
-
-  String _url;
-  String get url => _$this._url;
-  set url(String url) => _$this._url = url;
-
-  String _metadataHashb64;
-  String get metadataHashb64 => _$this._metadataHashb64;
-  set metadataHashb64(String metadataHashb64) =>
-      _$this._metadataHashb64 = metadataHashb64;
-
-  String _managerAccount;
-  String get managerAccount => _$this._managerAccount;
-  set managerAccount(String managerAccount) =>
-      _$this._managerAccount = managerAccount;
-
-  String _reserveAccount;
-  String get reserveAccount => _$this._reserveAccount;
-  set reserveAccount(String reserveAccount) =>
-      _$this._reserveAccount = reserveAccount;
-
-  String _freezeAccount;
-  String get freezeAccount => _$this._freezeAccount;
-  set freezeAccount(String freezeAccount) =>
-      _$this._freezeAccount = freezeAccount;
-
-  String _clawbackAccount;
-  String get clawbackAccount => _$this._clawbackAccount;
-  set clawbackAccount(String clawbackAccount) =>
-      _$this._clawbackAccount = clawbackAccount;
-
-  int _decimals;
-  int get decimals => _$this._decimals;
-  set decimals(int decimals) => _$this._decimals = decimals;
-
-  String _assetReason;
-  String get assetReason => _$this._assetReason;
-  set assetReason(String assetReason) => _$this._assetReason = assetReason;
+class TransactionBuilder implements Builder<Transaction, TransactionBuilder> {
+  _$Transaction _$v;
 
   String _type;
   String get type => _$this._type;
@@ -741,23 +480,10 @@ class TransactionAssetConfigurationBuilder
   String get group => _$this._group;
   set group(String group) => _$this._group = group;
 
-  TransactionAssetConfigurationBuilder();
+  TransactionBuilder();
 
-  TransactionAssetConfigurationBuilder get _$this {
+  TransactionBuilder get _$this {
     if (_$v != null) {
-      _creator = _$v.creator;
-      _totalSupply = _$v.totalSupply;
-      _defaultFrozen = _$v.defaultFrozen;
-      _unitName = _$v.unitName;
-      _assetName = _$v.assetName;
-      _url = _$v.url;
-      _metadataHashb64 = _$v.metadataHashb64;
-      _managerAccount = _$v.managerAccount;
-      _reserveAccount = _$v.reserveAccount;
-      _freezeAccount = _$v.freezeAccount;
-      _clawbackAccount = _$v.clawbackAccount;
-      _decimals = _$v.decimals;
-      _assetReason = _$v.assetReason;
       _type = _$v.type;
       _index = _$v.index;
       _round = _$v.round;
@@ -783,35 +509,22 @@ class TransactionAssetConfigurationBuilder
   }
 
   @override
-  void replace(TransactionAssetConfiguration other) {
+  void replace(Transaction other) {
     if (other == null) {
       throw ArgumentError.notNull('other');
     }
-    _$v = other as _$TransactionAssetConfiguration;
+    _$v = other as _$Transaction;
   }
 
   @override
-  void update(void Function(TransactionAssetConfigurationBuilder) updates) {
+  void update(void Function(TransactionBuilder) updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  _$TransactionAssetConfiguration build() {
+  _$Transaction build() {
     final _$result = _$v ??
-        _$TransactionAssetConfiguration._(
-            creator: creator,
-            totalSupply: totalSupply,
-            defaultFrozen: defaultFrozen,
-            unitName: unitName,
-            assetName: assetName,
-            url: url,
-            metadataHashb64: metadataHashb64,
-            managerAccount: managerAccount,
-            reserveAccount: reserveAccount,
-            freezeAccount: freezeAccount,
-            clawbackAccount: clawbackAccount,
-            decimals: decimals,
-            assetReason: assetReason,
+        _$Transaction._(
             type: type,
             index: index,
             round: round,
