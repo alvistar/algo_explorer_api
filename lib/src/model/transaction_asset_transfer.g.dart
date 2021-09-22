@@ -24,196 +24,207 @@ class _$TransactionAssetTransferSerializer
       Serializers serializers, TransactionAssetTransfer object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object>[];
-    if (object.sender != null) {
+    Object value;
+    value = object.sender;
+    if (value != null) {
       result
         ..add('sender')
-        ..add(serializers.serialize(object.sender,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.fromAssetBalance != null) {
+    value = object.fromAssetBalance;
+    if (value != null) {
       result
         ..add('fromAssetBalance')
-        ..add(serializers.serialize(object.fromAssetBalance,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.to != null) {
+    value = object.to;
+    if (value != null) {
       result
         ..add('to')
-        ..add(serializers.serialize(object.to,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.toIndex != null) {
+    value = object.toIndex;
+    if (value != null) {
       result
         ..add('toIndex')
-        ..add(serializers.serialize(object.toIndex,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.amount != null) {
+    value = object.amount;
+    if (value != null) {
       result
         ..add('amount')
-        ..add(serializers.serialize(object.amount,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.toAssetBalance != null) {
+    value = object.toAssetBalance;
+    if (value != null) {
       result
         ..add('toAssetBalance')
-        ..add(serializers.serialize(object.toAssetBalance,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.close != null) {
+    value = object.close;
+    if (value != null) {
       result
         ..add('close')
-        ..add(serializers.serialize(object.close,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.closeAmount != null) {
+    value = object.closeAmount;
+    if (value != null) {
       result
         ..add('closeAmount')
-        ..add(serializers.serialize(object.closeAmount,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.closeAssetBalance != null) {
+    value = object.closeAssetBalance;
+    if (value != null) {
       result
         ..add('closeAssetBalance')
-        ..add(serializers.serialize(object.closeAssetBalance,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.closeIndex != null) {
+    value = object.closeIndex;
+    if (value != null) {
       result
         ..add('closeIndex')
-        ..add(serializers.serialize(object.closeIndex,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.unitName != null) {
+    value = object.unitName;
+    if (value != null) {
       result
         ..add('unitName')
-        ..add(serializers.serialize(object.unitName,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.assetName != null) {
+    value = object.assetName;
+    if (value != null) {
       result
         ..add('assetName')
-        ..add(serializers.serialize(object.assetName,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.decimals != null) {
+    value = object.decimals;
+    if (value != null) {
       result
         ..add('decimals')
-        ..add(serializers.serialize(object.decimals,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.type != null) {
+    value = object.type;
+    if (value != null) {
       result
         ..add('type')
-        ..add(serializers.serialize(object.type,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.index != null) {
+    value = object.index;
+    if (value != null) {
       result
         ..add('index')
-        ..add(serializers.serialize(object.index,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.round != null) {
+    value = object.round;
+    if (value != null) {
       result
         ..add('round')
-        ..add(serializers.serialize(object.round,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.timestamp != null) {
+    value = object.timestamp;
+    if (value != null) {
       result
         ..add('timestamp')
-        ..add(serializers.serialize(object.timestamp,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.balance != null) {
+    value = object.balance;
+    if (value != null) {
       result
         ..add('balance')
-        ..add(serializers.serialize(object.balance,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.txid != null) {
+    value = object.txid;
+    if (value != null) {
       result
         ..add('txid')
-        ..add(serializers.serialize(object.txid,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.globalIndex != null) {
+    value = object.globalIndex;
+    if (value != null) {
       result
         ..add('globalIndex')
-        ..add(serializers.serialize(object.globalIndex,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.assetID != null) {
+    value = object.assetID;
+    if (value != null) {
       result
         ..add('assetID')
-        ..add(serializers.serialize(object.assetID,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.assetIndex != null) {
+    value = object.assetIndex;
+    if (value != null) {
       result
         ..add('assetIndex')
-        ..add(serializers.serialize(object.assetIndex,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.from != null) {
+    value = object.from;
+    if (value != null) {
       result
         ..add('from')
-        ..add(serializers.serialize(object.from,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.fromIndex != null) {
+    value = object.fromIndex;
+    if (value != null) {
       result
         ..add('fromIndex')
-        ..add(serializers.serialize(object.fromIndex,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.fromBalance != null) {
+    value = object.fromBalance;
+    if (value != null) {
       result
         ..add('fromBalance')
-        ..add(serializers.serialize(object.fromBalance,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.accumulatedFromRewards != null) {
+    value = object.accumulatedFromRewards;
+    if (value != null) {
       result
         ..add('accumulatedFromRewards')
-        ..add(serializers.serialize(object.accumulatedFromRewards,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.fee != null) {
+    value = object.fee;
+    if (value != null) {
       result
         ..add('fee')
-        ..add(serializers.serialize(object.fee,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.firstRound != null) {
+    value = object.firstRound;
+    if (value != null) {
       result
         ..add('firstRound')
-        ..add(serializers.serialize(object.firstRound,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.lastRound != null) {
+    value = object.lastRound;
+    if (value != null) {
       result
         ..add('lastRound')
-        ..add(serializers.serialize(object.lastRound,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.noteb64 != null) {
+    value = object.noteb64;
+    if (value != null) {
       result
         ..add('noteb64')
-        ..add(serializers.serialize(object.noteb64,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.fromRewards != null) {
+    value = object.fromRewards;
+    if (value != null) {
       result
         ..add('fromRewards')
-        ..add(serializers.serialize(object.fromRewards,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.group != null) {
+    value = object.group;
+    if (value != null) {
       result
         ..add('group')
-        ..add(serializers.serialize(object.group,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
     return result;
@@ -229,7 +240,7 @@ class _$TransactionAssetTransferSerializer
     while (iterator.moveNext()) {
       final key = iterator.current as String;
       iterator.moveNext();
-      final dynamic value = iterator.current;
+      final Object value = iterator.current;
       switch (key) {
         case 'sender':
           result.sender = serializers.deserialize(value,
@@ -739,39 +750,40 @@ class TransactionAssetTransferBuilder
   TransactionAssetTransferBuilder();
 
   TransactionAssetTransferBuilder get _$this {
-    if (_$v != null) {
-      _sender = _$v.sender;
-      _fromAssetBalance = _$v.fromAssetBalance;
-      _to = _$v.to;
-      _toIndex = _$v.toIndex;
-      _amount = _$v.amount;
-      _toAssetBalance = _$v.toAssetBalance;
-      _close = _$v.close;
-      _closeAmount = _$v.closeAmount;
-      _closeAssetBalance = _$v.closeAssetBalance;
-      _closeIndex = _$v.closeIndex;
-      _unitName = _$v.unitName;
-      _assetName = _$v.assetName;
-      _decimals = _$v.decimals;
-      _type = _$v.type;
-      _index = _$v.index;
-      _round = _$v.round;
-      _timestamp = _$v.timestamp;
-      _balance = _$v.balance;
-      _txid = _$v.txid;
-      _globalIndex = _$v.globalIndex;
-      _assetID = _$v.assetID;
-      _assetIndex = _$v.assetIndex;
-      _from = _$v.from;
-      _fromIndex = _$v.fromIndex;
-      _fromBalance = _$v.fromBalance;
-      _accumulatedFromRewards = _$v.accumulatedFromRewards;
-      _fee = _$v.fee;
-      _firstRound = _$v.firstRound;
-      _lastRound = _$v.lastRound;
-      _noteb64 = _$v.noteb64;
-      _fromRewards = _$v.fromRewards;
-      _group = _$v.group;
+    final $v = _$v;
+    if ($v != null) {
+      _sender = $v.sender;
+      _fromAssetBalance = $v.fromAssetBalance;
+      _to = $v.to;
+      _toIndex = $v.toIndex;
+      _amount = $v.amount;
+      _toAssetBalance = $v.toAssetBalance;
+      _close = $v.close;
+      _closeAmount = $v.closeAmount;
+      _closeAssetBalance = $v.closeAssetBalance;
+      _closeIndex = $v.closeIndex;
+      _unitName = $v.unitName;
+      _assetName = $v.assetName;
+      _decimals = $v.decimals;
+      _type = $v.type;
+      _index = $v.index;
+      _round = $v.round;
+      _timestamp = $v.timestamp;
+      _balance = $v.balance;
+      _txid = $v.txid;
+      _globalIndex = $v.globalIndex;
+      _assetID = $v.assetID;
+      _assetIndex = $v.assetIndex;
+      _from = $v.from;
+      _fromIndex = $v.fromIndex;
+      _fromBalance = $v.fromBalance;
+      _accumulatedFromRewards = $v.accumulatedFromRewards;
+      _fee = $v.fee;
+      _firstRound = $v.firstRound;
+      _lastRound = $v.lastRound;
+      _noteb64 = $v.noteb64;
+      _fromRewards = $v.fromRewards;
+      _group = $v.group;
       _$v = null;
     }
     return this;
@@ -779,9 +791,7 @@ class TransactionAssetTransferBuilder
 
   @override
   void replace(TransactionAssetTransfer other) {
-    if (other == null) {
-      throw ArgumentError.notNull('other');
-    }
+    ArgumentError.checkNotNull(other, 'other');
     _$v = other as _$TransactionAssetTransfer;
   }
 
@@ -831,4 +841,4 @@ class TransactionAssetTransferBuilder
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,deprecated_member_use_from_same_package,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new

@@ -1,6 +1,6 @@
 name: algo_explorer_api
 description: A starting point for Dart libraries or applications.
-version: 0.1.0
+version: 0.1.1
 # homepage: https://www.example.com
 
 environment:
@@ -11,11 +11,11 @@ environment:
 
 dependencies:
   dio: ^4.0.0
-  built_value: ^7.0.9
-  built_collection: ^4.3.2
+  built_value: ^8.1.2
+  built_collection: ^5.1.1
 
 dev_dependencies:
-  built_value_generator: ^7.0.9
+  built_value_generator: ^8.1.2
   build_runner: ^1.7.1
   pedantic: ^1.8.0
   test: ^1.6.0

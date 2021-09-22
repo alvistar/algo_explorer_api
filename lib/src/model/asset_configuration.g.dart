@@ -20,88 +20,100 @@ class _$AssetConfigurationSerializer
   Iterable<Object> serialize(Serializers serializers, AssetConfiguration object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object>[];
-    if (object.assetID != null) {
+    Object value;
+    value = object.assetID;
+    if (value != null) {
       result
         ..add('assetID')
-        ..add(serializers.serialize(object.assetID,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.creator != null) {
+    value = object.creator;
+    if (value != null) {
       result
         ..add('creator')
-        ..add(serializers.serialize(object.creator,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.totalSupply != null) {
+    value = object.totalSupply;
+    if (value != null) {
       result
         ..add('totalSupply')
-        ..add(serializers.serialize(object.totalSupply,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.defaultFrozen != null) {
+    value = object.defaultFrozen;
+    if (value != null) {
       result
         ..add('defaultFrozen')
-        ..add(serializers.serialize(object.defaultFrozen,
-            specifiedType: const FullType(bool)));
+        ..add(
+            serializers.serialize(value, specifiedType: const FullType(bool)));
     }
-    if (object.unitName != null) {
+    value = object.unitName;
+    if (value != null) {
       result
         ..add('unitName')
-        ..add(serializers.serialize(object.unitName,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.assetName != null) {
+    value = object.assetName;
+    if (value != null) {
       result
         ..add('assetName')
-        ..add(serializers.serialize(object.assetName,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.url != null) {
+    value = object.url;
+    if (value != null) {
       result
         ..add('url')
-        ..add(serializers.serialize(object.url,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.metadataHashb64 != null) {
+    value = object.metadataHashb64;
+    if (value != null) {
       result
         ..add('metadataHashb64')
-        ..add(serializers.serialize(object.metadataHashb64,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.managerAccount != null) {
+    value = object.managerAccount;
+    if (value != null) {
       result
         ..add('managerAccount')
-        ..add(serializers.serialize(object.managerAccount,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.reserveAccount != null) {
+    value = object.reserveAccount;
+    if (value != null) {
       result
         ..add('reserveAccount')
-        ..add(serializers.serialize(object.reserveAccount,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.freezeAccount != null) {
+    value = object.freezeAccount;
+    if (value != null) {
       result
         ..add('freezeAccount')
-        ..add(serializers.serialize(object.freezeAccount,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.clawbackAccount != null) {
+    value = object.clawbackAccount;
+    if (value != null) {
       result
         ..add('clawbackAccount')
-        ..add(serializers.serialize(object.clawbackAccount,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    if (object.decimals != null) {
+    value = object.decimals;
+    if (value != null) {
       result
         ..add('decimals')
-        ..add(serializers.serialize(object.decimals,
-            specifiedType: const FullType(int)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
-    if (object.assetReason != null) {
+    value = object.assetReason;
+    if (value != null) {
       result
         ..add('assetReason')
-        ..add(serializers.serialize(object.assetReason,
+        ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
     return result;
@@ -117,7 +129,7 @@ class _$AssetConfigurationSerializer
     while (iterator.moveNext()) {
       final key = iterator.current as String;
       iterator.moveNext();
-      final dynamic value = iterator.current;
+      final Object value = iterator.current;
       switch (key) {
         case 'assetID':
           result.assetID = serializers.deserialize(value,
@@ -384,21 +396,22 @@ class AssetConfigurationBuilder
   AssetConfigurationBuilder();
 
   AssetConfigurationBuilder get _$this {
-    if (_$v != null) {
-      _assetID = _$v.assetID;
-      _creator = _$v.creator;
-      _totalSupply = _$v.totalSupply;
-      _defaultFrozen = _$v.defaultFrozen;
-      _unitName = _$v.unitName;
-      _assetName = _$v.assetName;
-      _url = _$v.url;
-      _metadataHashb64 = _$v.metadataHashb64;
-      _managerAccount = _$v.managerAccount;
-      _reserveAccount = _$v.reserveAccount;
-      _freezeAccount = _$v.freezeAccount;
-      _clawbackAccount = _$v.clawbackAccount;
-      _decimals = _$v.decimals;
-      _assetReason = _$v.assetReason;
+    final $v = _$v;
+    if ($v != null) {
+      _assetID = $v.assetID;
+      _creator = $v.creator;
+      _totalSupply = $v.totalSupply;
+      _defaultFrozen = $v.defaultFrozen;
+      _unitName = $v.unitName;
+      _assetName = $v.assetName;
+      _url = $v.url;
+      _metadataHashb64 = $v.metadataHashb64;
+      _managerAccount = $v.managerAccount;
+      _reserveAccount = $v.reserveAccount;
+      _freezeAccount = $v.freezeAccount;
+      _clawbackAccount = $v.clawbackAccount;
+      _decimals = $v.decimals;
+      _assetReason = $v.assetReason;
       _$v = null;
     }
     return this;
@@ -406,9 +419,7 @@ class AssetConfigurationBuilder
 
   @override
   void replace(AssetConfiguration other) {
-    if (other == null) {
-      throw ArgumentError.notNull('other');
-    }
+    ArgumentError.checkNotNull(other, 'other');
     _$v = other as _$AssetConfiguration;
   }
 
@@ -440,4 +451,4 @@ class AssetConfigurationBuilder
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
+// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,deprecated_member_use_from_same_package,lines_longer_than_80_chars,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new
