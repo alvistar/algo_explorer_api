@@ -9,18 +9,18 @@ void main() async {
   );
 
   final dio = Dio(options);
-  dio.interceptors.add(InterceptorsWrapper(onError: (DioError e) {
+  dio.interceptors.add(InterceptorsWrapper(onError: (DioError e, handler) {
     if (e.response != null) {
       print(e.response.data);
       print(e.response.headers);
-      print(e.response.request);
+      print(e.response.requestOptions);
     } else {
       // Something happened in setting up or sending the request that triggered an Error
-      print(e.request);
+      print(e.requestOptions);
       print(e.message);
     }
 
-    return e;
+    return handler.next(e);
   }));
 
   final explorerApi = ExplorerApi(dio: dio);

@@ -43,7 +43,7 @@ class AssetApi {
     return Response(
       data: dataList,
       headers: response.headers,
-      request: response.request,
+      requestOptions: response.requestOptions,
       redirects: response.redirects,
       statusCode: response.statusCode,
       statusMessage: response.statusMessage,
